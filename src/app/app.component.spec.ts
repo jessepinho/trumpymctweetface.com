@@ -4,6 +4,7 @@ import { AppComponent } from './app.component';
 import { FaceComponent } from './face/face.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { TweetComponent } from './tweet/tweet.component';
+import { TwitterService } from './twitter.service';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -13,6 +14,9 @@ describe('AppComponent', () => {
         FaceComponent,
         TimelineComponent,
         TweetComponent,
+      ],
+      providers: [
+        TwitterService,
       ],
     }).compileComponents();
   }));

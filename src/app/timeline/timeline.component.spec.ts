@@ -3,6 +3,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { FaceComponent } from '../face/face.component';
 import { TimelineComponent } from './timeline.component';
 import { TweetComponent } from '../tweet/tweet.component';
+import { TwitterService } from '../twitter.service';
 
 describe('TimelineComponent', () => {
   let component: TimelineComponent;
@@ -14,7 +15,10 @@ describe('TimelineComponent', () => {
         FaceComponent,
         TimelineComponent,
         TweetComponent,
-      ]
+      ],
+      providers: [
+        TwitterService,
+      ],
     })
     .compileComponents();
   }));

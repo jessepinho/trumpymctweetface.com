@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { FaceComponent } from './face/face.component';
 import { TweetComponent } from './tweet/tweet.component';
 import { TimelineComponent } from './timeline/timeline.component';
+import { TwitterService } from './twitter.service';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,9 @@ import { TimelineComponent } from './timeline/timeline.component';
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [
+    TwitterService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

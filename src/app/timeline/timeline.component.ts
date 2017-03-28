@@ -1,9 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import tweets from './tweets';
-
-interface Tweet {
-  text: string;
-}
+import { TwitterService } from '../twitter.service';
 
 @Component({
   selector: 'app-timeline',
@@ -12,8 +8,11 @@ interface Tweet {
 })
 export class TimelineComponent implements OnInit {
   private currentTweetIndex: number = 0;
+  private tweets: Tweet[] = this.service.getTweets();
 
-  private tweets: Tweet[] = tweets.map(({ text }) => ({ text }));
+  constructor(
+    private service: TwitterService,
+  ) {}
 
   ngOnInit(): void {
     setInterval(() => {
