@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-face',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./face.component.sass']
 })
 export class FaceComponent implements OnInit {
+  @Input() private intensity: number;
+
   private color: string = 'rgb(222, 140, 93)';
 
   constructor() { }
