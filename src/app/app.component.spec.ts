@@ -2,6 +2,7 @@ import { TestBed, async } from '@angular/core/testing';
 
 import { AppComponent } from './app.component';
 import { FaceComponent } from './face/face.component';
+import { TweetComponent } from './tweet/tweet.component';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -9,6 +10,7 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent,
         FaceComponent,
+        TweetComponent,
       ],
     }).compileComponents();
   }));
