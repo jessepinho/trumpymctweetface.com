@@ -2,6 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { FaceComponent } from '../face/face.component';
 import { TweetComponent } from './tweet.component';
+import { TwitterService } from '../twitter.service';
 
 describe('TweetComponent', () => {
   let component: TweetComponent;
@@ -12,7 +13,10 @@ describe('TweetComponent', () => {
       declarations: [
         FaceComponent,
         TweetComponent,
-      ]
+      ],
+      providers: [
+        TwitterService,
+      ],
     })
     .compileComponents();
   }));
