@@ -5,6 +5,4 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  private tweet: string = 'We are going to MAKE AMERICA GREAT AGAIN!';
-}
+export class AppComponent {}
