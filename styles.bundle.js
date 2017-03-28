@@ -1,6 +1,6 @@
 webpackJsonp([2,4],{
 
-/***/ 13:
+/***/ 14:
 /***/ (function(module, exports) {
 
 /*
@@ -57,22 +57,22 @@ module.exports = function() {
 
 /***/ }),
 
-/***/ 144:
+/***/ 148:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(13)();
+exports = module.exports = __webpack_require__(14)();
 // imports
-
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Roboto);", ""]);
 
 // module
-exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\n", ""]);
+exports.push([module.i, "body {\n  font-family: Roboto, sans-serif;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 178:
+/***/ 190:
 /***/ (function(module, exports) {
 
 /*
@@ -325,24 +325,24 @@ function updateLink(linkElement, obj) {
 
 /***/ }),
 
-/***/ 182:
+/***/ 194:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(75);
+module.exports = __webpack_require__(80);
 
 
 /***/ }),
 
-/***/ 75:
+/***/ 80:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(144);
+var content = __webpack_require__(148);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
-var update = __webpack_require__(178)(content, {});
+var update = __webpack_require__(190)(content, {});
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -360,5 +360,5 @@ if(false) {
 
 /***/ })
 
-},[182]);
+},[194]);
 //# sourceMappingURL=styles.bundle.js.map
