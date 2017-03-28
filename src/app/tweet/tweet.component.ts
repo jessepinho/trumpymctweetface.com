@@ -6,7 +6,7 @@ import {
   SimpleChanges,
 } from '@angular/core';
 
-import { intensity } from './intensity';
+import { intensity } from '../helpers/intensity';
 
 @Component({
   selector: 'app-tweet',
