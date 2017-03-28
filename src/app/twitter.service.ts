@@ -9,7 +9,11 @@ export class TwitterService {
     return tweets.map(({ text }) => ({ text }));
   }
 
-  getMaxIntensity(): number {
+  getTweetIntensity(tweet: Tweet): number {
+    return intensity(tweet.text);
+  }
+
+  private getMaxIntensity(): number {
     return Math.max.apply(Math, tweets.map(({ text }) => intensity(text)));
   }
 }

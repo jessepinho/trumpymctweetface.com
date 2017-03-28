@@ -2,28 +2,29 @@ import {
   Component,
   Input,
   OnChanges,
-  OnInit,
   SimpleChanges,
 } from '@angular/core';
 
 import { intensity } from '../helpers/intensity';
+import { TwitterService } from '../twitter.service';
 
 @Component({
   selector: 'app-tweet',
   templateUrl: './tweet.component.html',
   styleUrls: ['./tweet.component.css']
 })
-export class TweetComponent implements OnInit, OnChanges {
-  @Input() private tweet: string;
+export class TweetComponent implements OnChanges {
+  @Input() private tweet: Tweet;
+
+  constructor(
+    private service: TwitterService,
+  ) {}
 
   private intensity: number;
 
-  ngOnInit() {
-  }
-
   ngOnChanges(changes: SimpleChanges) {
     if (changes.hasOwnProperty('tweet')) {
-      this.intensity = intensity(this.tweet);
+      this.intensity = this.service.getTweetIntensity(this.tweet);
     }
   }
 }
