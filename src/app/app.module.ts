@@ -5,11 +5,13 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { FaceComponent } from './face/face.component';
+import { TweetComponent } from './tweet/tweet.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FaceComponent
+    FaceComponent,
+    TweetComponent
   ],
   imports: [
     BrowserModule,
