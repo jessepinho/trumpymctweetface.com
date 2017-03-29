@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 body {
+  background-image: radial-gradient(circle, #edb48e 0%, #ff6f00 100%);
   font-family: Roboto, sans-serif;
 }
