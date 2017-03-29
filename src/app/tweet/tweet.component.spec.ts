@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { FaceComponent } from '../face/face.component';
+import { SvgComponent } from '../svg/svg.component';
 import { TweetComponent } from './tweet.component';
 import { TwitterService } from '../twitter.service';
 
@@ -12,6 +13,7 @@ describe('TweetComponent', () => {
     TestBed.configureTestingModule({
       declarations: [
         FaceComponent,
+        SvgComponent,
         TweetComponent,
       ],
       providers: [

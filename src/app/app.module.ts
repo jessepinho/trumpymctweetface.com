@@ -9,13 +9,15 @@ import { FaceComponent } from './face/face.component';
 import { TweetComponent } from './tweet/tweet.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { TwitterService } from './twitter.service';
+import { SvgComponent } from './svg/svg.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FaceComponent,
     TweetComponent,
-    TimelineComponent
+    TimelineComponent,
+    SvgComponent
   ],
   imports: [
     BrowserModule,

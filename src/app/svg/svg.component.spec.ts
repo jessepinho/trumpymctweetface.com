@@ -1,24 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FaceComponent } from './face.component';
-import { SvgComponent } from '../svg/svg.component';
+import { SvgComponent } from './svg.component';
 
-describe('FaceComponent', () => {
-  let component: FaceComponent;
-  let fixture: ComponentFixture<FaceComponent>;
+describe('SvgComponent', () => {
+  let component: SvgComponent;
+  let fixture: ComponentFixture<SvgComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [
-        FaceComponent,
-        SvgComponent,
-      ]
+      declarations: [ SvgComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FaceComponent);
+    fixture = TestBed.createComponent(SvgComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
