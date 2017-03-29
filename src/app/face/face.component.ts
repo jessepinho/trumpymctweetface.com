@@ -8,6 +8,9 @@ import * as d3 from 'd3';
 
 import { SvgComponent } from '../svg/svg.component';
 
+const NORMAL_SKIN_TONE = '#edb48e';
+const NEXT_LEVEL_SKIN_TONE = '#ff6f00';
+
 @Component({
   selector: 'app-face',
   templateUrl: './face.component.html',
@@ -19,7 +22,7 @@ export class FaceComponent implements OnChanges {
   private color = d3
     .scaleLinear<string>()
     .domain([0, 1])
-    .range(['#edb48e', '#ff6f00'])
+    .range([NORMAL_SKIN_TONE, NEXT_LEVEL_SKIN_TONE])
     .interpolate(d3.interpolateHcl);
 
   ngOnChanges(changes: SimpleChanges): void {
