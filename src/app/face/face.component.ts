@@ -26,6 +26,8 @@ export class FaceComponent implements OnChanges {
     if (changes.hasOwnProperty('intensity') && this.selection) {
       this.selection
         .data([this.intensity])
+        .transition()
+        .duration(250)
         .attr('fill', d => this.color(d));
     }
   }
