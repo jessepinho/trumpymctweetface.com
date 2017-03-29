@@ -1,9 +1,9 @@
 webpackJsonp([1,4],{
 
-/***/ 149:
+/***/ 147:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(14)();
+exports = module.exports = __webpack_require__(13)();
 // imports
 
 
@@ -18,10 +18,46 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
+/***/ 148:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(13)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 149:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(13)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
 /***/ 150:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(14)();
+exports = module.exports = __webpack_require__(13)();
 // imports
 
 
@@ -39,7 +75,7 @@ module.exports = module.exports.toString();
 /***/ 151:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(14)();
+exports = module.exports = __webpack_require__(13)();
 // imports
 
 
@@ -54,67 +90,56 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 152:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(14)();
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ 158:
+/***/ 154:
 /***/ (function(module, exports) {
 
 module.exports = "<app-timeline></app-timeline>\n"
 
 /***/ }),
 
-/***/ 159:
+/***/ 155:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"face-wrapper\">\n  <div\n    class=\"face\"\n    [inlineSVG]=\"'/assets/trump.svg'\"\n    ></div>\n</div>\n"
+module.exports = "<div class=\"face-wrapper\">\n  <div class=\"face\">\n    <app-svg (svgLoaded)=\"handleSVGLoaded($event)\"></app-svg>\n  </div>\n</div>\n"
 
 /***/ }),
 
-/***/ 160:
+/***/ 156:
+/***/ (function(module, exports) {
+
+module.exports = "<svg id=\"illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 329.62 457.94\"><title>face</title><path id=\"face\" d=\"M831.5,382.5c-6.54-17.67,2.74-40.59-1-77s-3.48-65.48-16-66c-83.06-3.46-122.42-22.5-156-26s-49.18,53.42-61,78-16.23,40.69-26,30-23.51-12.1-26-4c-10.55,34.4-.46,42.48,4,57,7.31,23.8,7.37,30.69,20,42,3.58,3.2,3.14,19,4,23a213.17,213.17,0,0,0,31,61c6.71,9.38,57.67,85.43,131,70,29.87-6.28,67.44-21.89,76-90,5.61-41.2,16.3-33.6,20-97l.2-.57A3.22,3.22,0,0,1,831.5,382.5Z\" transform=\"translate(-530.97 -114.62)\" fill=\"#ff6f00\" fill-rule=\"evenodd\"/><path id=\"hair\" d=\"M549.5,374.5c-4.46-14.52-14.55-22.6-4-57,2.49-8.1,16.23-6.69,26,4s14.18-5.42,26-30,27.42-81.5,61-78,72.94,22.54,156,26c12.52.52,12.26,29.59,16,66s-5.54,59.33,1,77a3.22,3.22,0,0,0,.2.43c10.2-28.63,16.32-59.32,13.8-92.43,8.06,5,4.88-35.77-7-69,18.5-4.46,38.73-21.33,0-46s-72.22-67.55-163-60-125.64,85.58-129,138c-2.17,33.77-20.92,41-14,97s14,48.76,19,68c2.92,11.32,19.27,22.36,22,21-.86-4-.42-19.8-4-23C556.87,405.19,556.81,398.3,549.5,374.5Z\" transform=\"translate(-530.97 -114.62)\" fill=\"#ffe200\" fill-rule=\"evenodd\"/><g id=\"mouthBottom\"><path id=\"teeth\" d=\"M722,486h27c.7-1.62,2.25-6.08,3-6,0-.37,4.79-8.92,6-8.5-.46-.75,5.35-9.5,8-9.5,2,5,.1,5.9-5,11-1,1-4,9-5,15S732,512,722,486Z\" transform=\"translate(-530.97 -114.62)\" fill=\"#fff\" fill-rule=\"evenodd\"/><path id=\"shadow\" d=\"M711.13,484c3.88,15.63,8,38.75,31.38,37.63s29.63-19.87,31.38-40.62c-1.37,21.25-5.12,42.75-32,42.25S712,497.88,711.13,484Z\" transform=\"translate(-530.97 -114.62)\" fill-rule=\"evenodd\" opacity=\"0.3\"/></g><g id=\"mouthTop\"><path id=\"teeth-2\" data-name=\"teeth\" d=\"M722,453h8c3,3,12,3,14,1,6,3,11,1,13-1,5,0,7-1,8-4s-1-15-4-14a51.68,51.68,0,0,1-17,3C736,438,726,446,722,453Z\" transform=\"translate(-530.97 -114.62)\" fill=\"#fff\" fill-rule=\"evenodd\"/><path id=\"shadow-2\" data-name=\"shadow\" d=\"M722,453c4-7,14-15,22-15s17.34-3.37,20.38-4.25c3.88-1.12,3,2.63-8.62,4.63S734,439.13,722,453Z\" transform=\"translate(-530.97 -114.62)\" fill-rule=\"evenodd\" opacity=\"0.3\"/></g></svg>"
+
+/***/ }),
+
+/***/ 157:
 /***/ (function(module, exports) {
 
 module.exports = "<app-tweet [tweet]=\"tweets[currentTweetIndex]\"></app-tweet>\n"
 
 /***/ }),
 
-/***/ 161:
+/***/ 158:
 /***/ (function(module, exports) {
 
 module.exports = "<app-face [intensity]=\"intensity\"></app-face>\n\n{{tweet?.text}}\n"
 
 /***/ }),
 
-/***/ 192:
+/***/ 184:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(78);
+module.exports = __webpack_require__(73);
 
 
 /***/ }),
 
-/***/ 30:
+/***/ 29:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__helpers_intensity__ = __webpack_require__(87);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__twitter_service_data__ = __webpack_require__(90);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__helpers_intensity__ = __webpack_require__(83);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__twitter_service_data__ = __webpack_require__(87);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TwitterService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -149,14 +174,14 @@ var TwitterService = (function () {
     return TwitterService;
 }());
 TwitterService = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])()
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */])()
 ], TwitterService);
 
 //# sourceMappingURL=twitter.service.js.map
 
 /***/ }),
 
-/***/ 77:
+/***/ 72:
 /***/ (function(module, exports) {
 
 function webpackEmptyContext(req) {
@@ -165,37 +190,37 @@ function webpackEmptyContext(req) {
 webpackEmptyContext.keys = function() { return []; };
 webpackEmptyContext.resolve = webpackEmptyContext;
 module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 77;
+webpackEmptyContext.id = 72;
 
 
 /***/ }),
 
-/***/ 78:
+/***/ 73:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(83);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(85);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(91);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(88);
 
 
 
 
 if (__WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].production) {
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["enableProdMode"])();
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["a" /* enableProdMode */])();
 }
 __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_2__app_app_module__["a" /* AppModule */]);
 //# sourceMappingURL=main.js.map
 
 /***/ }),
 
-/***/ 84:
+/***/ 80:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -210,10 +235,10 @@ var AppComponent = (function () {
     return AppComponent;
 }());
 AppComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_4" /* Component */])({
         selector: 'app-root',
-        template: __webpack_require__(158),
-        styles: [__webpack_require__(150)]
+        template: __webpack_require__(154),
+        styles: [__webpack_require__(148)]
     })
 ], AppComponent);
 
@@ -221,21 +246,20 @@ AppComponent = __decorate([
 
 /***/ }),
 
-/***/ 85:
+/***/ 81:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(22);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(82);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ng_inline_svg__ = __webpack_require__(154);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ng_inline_svg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_ng_inline_svg__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(84);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__face_face_component__ = __webpack_require__(86);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__tweet_tweet_component__ = __webpack_require__(89);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__timeline_timeline_component__ = __webpack_require__(88);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__twitter_service__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(77);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__face_face_component__ = __webpack_require__(82);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__tweet_tweet_component__ = __webpack_require__(86);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__timeline_timeline_component__ = __webpack_require__(85);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__twitter_service__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__svg_svg_component__ = __webpack_require__(84);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -259,23 +283,23 @@ var AppModule = (function () {
     return AppModule;
 }());
 AppModule = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["NgModule"])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* NgModule */])({
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */],
-            __WEBPACK_IMPORTED_MODULE_6__face_face_component__["a" /* FaceComponent */],
-            __WEBPACK_IMPORTED_MODULE_7__tweet_tweet_component__["a" /* TweetComponent */],
-            __WEBPACK_IMPORTED_MODULE_8__timeline_timeline_component__["a" /* TimelineComponent */]
+            __WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */],
+            __WEBPACK_IMPORTED_MODULE_5__face_face_component__["a" /* FaceComponent */],
+            __WEBPACK_IMPORTED_MODULE_6__tweet_tweet_component__["a" /* TweetComponent */],
+            __WEBPACK_IMPORTED_MODULE_7__timeline_timeline_component__["a" /* TimelineComponent */],
+            __WEBPACK_IMPORTED_MODULE_9__svg_svg_component__["a" /* SvgComponent */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
             __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormsModule */],
-            __WEBPACK_IMPORTED_MODULE_3__angular_http__["HttpModule"],
-            __WEBPACK_IMPORTED_MODULE_4_ng_inline_svg__["InlineSVGModule"],
+            __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* HttpModule */],
         ],
         providers: [
-            __WEBPACK_IMPORTED_MODULE_9__twitter_service__["a" /* TwitterService */],
+            __WEBPACK_IMPORTED_MODULE_8__twitter_service__["a" /* TwitterService */],
         ],
-        bootstrap: [__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */]]
+        bootstrap: [__WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */]]
     })
 ], AppModule);
 
@@ -283,13 +307,15 @@ AppModule = __decorate([
 
 /***/ }),
 
-/***/ 86:
+/***/ 82:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_color__ = __webpack_require__(95);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_color__ = __webpack_require__(92);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_color___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_color__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_d3__ = __webpack_require__(146);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_d3___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_d3__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FaceComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -302,6 +328,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
 var INITIAL_COLOR = 'rgb(0, 0, 0)';
 var INTENSE_COLOR = 'rgb(255, 255, 255)';
 var FaceComponent = (function () {
@@ -309,21 +336,35 @@ var FaceComponent = (function () {
         this.color = INITIAL_COLOR;
     }
     FaceComponent.prototype.ngOnChanges = function (changes) {
-        if (changes.hasOwnProperty('intensity')) {
+        if (changes.hasOwnProperty('intensity') && this.selection) {
             this.color = __WEBPACK_IMPORTED_MODULE_1_color__(INITIAL_COLOR).mix(__WEBPACK_IMPORTED_MODULE_1_color__(INTENSE_COLOR), this.intensity);
+            var color_1 = __WEBPACK_IMPORTED_MODULE_2_d3__["scaleLinear"]()
+                .domain([0, 1])
+                .range(['#edb48e', '#ff6f00'])
+                .interpolate(__WEBPACK_IMPORTED_MODULE_2_d3__["interpolateHcl"]);
+            this.selection
+                .data([this.intensity])
+                .attr('fill', function (d) { return color_1(d); });
         }
+    };
+    FaceComponent.prototype.handleSVGLoaded = function (svg) {
+        this.svg = svg;
+        this.selection = __WEBPACK_IMPORTED_MODULE_2_d3__["select"](svg).select('#face');
+    };
+    FaceComponent.prototype.getMixedColor = function () {
+        return __WEBPACK_IMPORTED_MODULE_1_color__(INITIAL_COLOR).mix(__WEBPACK_IMPORTED_MODULE_1_color__(INTENSE_COLOR), this.intensity);
     };
     return FaceComponent;
 }());
 __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Input */])(),
     __metadata("design:type", Number)
 ], FaceComponent.prototype, "intensity", void 0);
 FaceComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_4" /* Component */])({
         selector: 'app-face',
-        template: __webpack_require__(159),
-        styles: [__webpack_require__(149)]
+        template: __webpack_require__(155),
+        styles: [__webpack_require__(147)]
     })
 ], FaceComponent);
 
@@ -331,7 +372,7 @@ FaceComponent = __decorate([
 
 /***/ }),
 
-/***/ 87:
+/***/ 83:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -345,12 +386,61 @@ function intensity(tweet) {
 
 /***/ }),
 
-/***/ 88:
+/***/ 84:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__twitter_service__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SvgComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var SvgComponent = (function () {
+    function SvgComponent(element) {
+        this.element = element;
+        this.svgLoaded = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* EventEmitter */]();
+    }
+    SvgComponent.prototype.ngAfterViewInit = function () {
+        this.svg = this.element.nativeElement.getElementsByTagName('svg')[0];
+        this.svgLoaded.emit(this.svg);
+    };
+    return SvgComponent;
+}());
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Input */])(),
+    __metadata("design:type", String)
+], SvgComponent.prototype, "faceColor", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_3" /* Output */])(),
+    __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* EventEmitter */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* EventEmitter */]) === "function" && _a || Object)
+], SvgComponent.prototype, "svgLoaded", void 0);
+SvgComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_4" /* Component */])({
+        selector: 'app-svg',
+        template: __webpack_require__(156),
+        styles: [__webpack_require__(149)]
+    }),
+    __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["L" /* ElementRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["L" /* ElementRef */]) === "function" && _b || Object])
+], SvgComponent);
+
+var _a, _b;
+//# sourceMappingURL=svg.component.js.map
+
+/***/ }),
+
+/***/ 85:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__twitter_service__ = __webpack_require__(29);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TimelineComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -381,10 +471,10 @@ var TimelineComponent = (function () {
     return TimelineComponent;
 }());
 TimelineComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_4" /* Component */])({
         selector: 'app-timeline',
-        template: __webpack_require__(160),
-        styles: [__webpack_require__(151)]
+        template: __webpack_require__(157),
+        styles: [__webpack_require__(150)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__twitter_service__["a" /* TwitterService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__twitter_service__["a" /* TwitterService */]) === "function" && _a || Object])
 ], TimelineComponent);
@@ -394,12 +484,12 @@ var _a;
 
 /***/ }),
 
-/***/ 89:
+/***/ 86:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__twitter_service__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__twitter_service__ = __webpack_require__(29);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TweetComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -424,14 +514,14 @@ var TweetComponent = (function () {
     return TweetComponent;
 }());
 __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Input */])(),
     __metadata("design:type", Object)
 ], TweetComponent.prototype, "tweet", void 0);
 TweetComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_4" /* Component */])({
         selector: 'app-tweet',
-        template: __webpack_require__(161),
-        styles: [__webpack_require__(152)]
+        template: __webpack_require__(158),
+        styles: [__webpack_require__(151)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__twitter_service__["a" /* TwitterService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__twitter_service__["a" /* TwitterService */]) === "function" && _a || Object])
 ], TweetComponent);
@@ -441,7 +531,7 @@ var _a;
 
 /***/ }),
 
-/***/ 90:
+/***/ 87:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -450,7 +540,7 @@ var _a;
 
 /***/ }),
 
-/***/ 91:
+/***/ 88:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -467,5 +557,5 @@ var environment = {
 
 /***/ })
 
-},[192]);
+},[184]);
 //# sourceMappingURL=main.bundle.js.map
