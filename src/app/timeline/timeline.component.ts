@@ -20,6 +20,6 @@ export class TimelineComponent implements OnInit {
       if (this.currentTweetIndex >= this.tweets.length) {
         this.currentTweetIndex = 0;
       }
-    }, 250);
+    }, 500);
   }
 }
