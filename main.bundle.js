@@ -8,7 +8,7 @@ exports = module.exports = __webpack_require__(13)();
 
 
 // module
-exports.push([module.i, ".face {\n  width: 200px; }\n\n.face-wrapper {\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  top: 0;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center; }\n", ""]);
+exports.push([module.i, "", ""]);
 
 // exports
 
@@ -44,7 +44,7 @@ exports = module.exports = __webpack_require__(13)();
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, "svg {\n  height: 100%;\n  width: 100%;\n}\n", ""]);
 
 // exports
 
@@ -80,7 +80,7 @@ exports = module.exports = __webpack_require__(13)();
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, ":host {\n  position: absolute;\n\n  bottom: 0;\n  left: 0;\n  right: 0;\n  top: 0;\n}\n\n.face,\n.text {\n  box-sizing: border-box;\n  padding: 1rem;\n  width: 50%;\n}\n\n.text {\n  font-family: 'Gloria Hallelujah', sans-serif;\n  font-size: 3rem;\n  line-height: 1.5em;\n}\n\n.wrapper {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  height: 100%;\n}\n", ""]);
 
 // exports
 
@@ -100,7 +100,7 @@ module.exports = "<app-timeline></app-timeline>\n"
 /***/ 148:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"face-wrapper\">\n  <div class=\"face\">\n    <app-svg (svgLoaded)=\"handleSVGLoaded($event)\"></app-svg>\n  </div>\n</div>\n"
+module.exports = "<app-svg (svgLoaded)=\"handleSVGLoaded($event)\"></app-svg>\n"
 
 /***/ }),
 
@@ -121,7 +121,7 @@ module.exports = "<app-tweet [tweet]=\"tweets[currentTweetIndex]\"></app-tweet>\
 /***/ 151:
 /***/ (function(module, exports) {
 
-module.exports = "<app-face [intensity]=\"intensity\"></app-face>\n\n{{tweet?.text}}\n"
+module.exports = "<div class=\"wrapper\">\n  <div class=\"face\">\n    <app-face [intensity]=\"intensity\"></app-face>\n  </div>\n  <span class=\"text\">{{tweet?.text}}</span>\n</div>\n"
 
 /***/ }),
 
@@ -326,11 +326,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+var NORMAL_SKIN_TONE = '#edb48e';
+var NEXT_LEVEL_SKIN_TONE = '#ff6f00';
 var FaceComponent = (function () {
     function FaceComponent() {
         this.color = __WEBPACK_IMPORTED_MODULE_1_d3__["scaleLinear"]()
             .domain([0, 1])
-            .range(['#edb48e', '#ff6f00'])
+            .range([NORMAL_SKIN_TONE, NEXT_LEVEL_SKIN_TONE])
             .interpolate(__WEBPACK_IMPORTED_MODULE_1_d3__["interpolateHcl"]);
     }
     FaceComponent.prototype.ngOnChanges = function (changes) {
