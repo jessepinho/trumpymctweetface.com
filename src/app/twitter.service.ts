@@ -8,7 +8,7 @@ export class TwitterService {
   private maxIntensity: number;
 
   getTweets(): Tweet[] {
-    return tweets.map(({ text }) => ({ text }));
+    return tweets.map(({ id_str, text }) => ({ id_str, text }));
   }
 
   getTweetIntensity(tweet: Tweet): number {
