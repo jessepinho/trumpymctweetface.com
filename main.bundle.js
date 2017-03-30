@@ -330,23 +330,39 @@ var NORMAL_SKIN_TONE = '#ffe9bf';
 var NEXT_LEVEL_SKIN_TONE = '#ff6f00';
 var FaceComponent = (function () {
     function FaceComponent() {
-        this.color = __WEBPACK_IMPORTED_MODULE_1_d3__["scaleLinear"]()
+        this.faceColor = __WEBPACK_IMPORTED_MODULE_1_d3__["scaleLinear"]()
             .domain([0, 1])
             .range([NORMAL_SKIN_TONE, NEXT_LEVEL_SKIN_TONE])
             .interpolate(__WEBPACK_IMPORTED_MODULE_1_d3__["interpolateHcl"]);
+        this.mouthOpening = __WEBPACK_IMPORTED_MODULE_1_d3__["scaleLinear"]()
+            .domain([0, 1])
+            .range([0, 30]);
     }
     FaceComponent.prototype.ngOnChanges = function (changes) {
         var _this = this;
         if (changes.hasOwnProperty('intensity') && this.selection) {
-            this.selection
+            this.face
                 .data([this.intensity])
                 .transition()
                 .duration(250)
-                .attr('fill', function (d) { return _this.color(d); });
+                .attr('fill', function (d) { return _this.faceColor(d); });
+            this.mouthTop
+                .data([this.intensity])
+                .transition()
+                .duration(250)
+                .attr('transform', function (d) { return "translate(0, -" + _this.mouthOpening(d) + ")"; });
+            this.mouthBottom
+                .data([this.intensity])
+                .transition()
+                .duration(250)
+                .attr('transform', function (d) { return "translate(0, " + _this.mouthOpening(d) + ")"; });
         }
     };
     FaceComponent.prototype.handleSVGLoaded = function (svg) {
-        this.selection = __WEBPACK_IMPORTED_MODULE_1_d3__["select"](svg).select('#face');
+        this.selection = __WEBPACK_IMPORTED_MODULE_1_d3__["select"](svg);
+        this.face = this.selection.select('#face');
+        this.mouthTop = this.selection.select('#mouthTop');
+        this.mouthBottom = this.selection.select('#mouthBottom');
     };
     return FaceComponent;
 }());
