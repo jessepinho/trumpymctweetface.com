@@ -1,10 +1,13 @@
 <app-tweet [tweet]="tweets[currentTweetIndex]"></app-tweet>
 
-<input
-  type="range"
-  class="speed"
-  min="1"
-  max="10"
-  step="1"
-  [(ngModel)]="speed"
-  >
+<footer>
+  <input
+    type="range"
+    min="1"
+    max="10"
+    step="1"
+    [(ngModel)]="speed"
+    >
+
+  by <a href="http://jessepinho.com" target="_blank">@jessepinho</a>
+</footer>

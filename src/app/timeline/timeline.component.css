@@ -8,7 +8,11 @@ app-tweet {
   top: 0;
 }
 
-.speed {
+footer {
   position: absolute;
+  bottom: 0;
+  right: 0;
   z-index: 2;
+
+  padding: 1rem;
 }
