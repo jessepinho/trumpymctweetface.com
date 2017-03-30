@@ -114,7 +114,7 @@ module.exports = "<svg id=\"illustration\" xmlns=\"http://www.w3.org/2000/svg\" 
 /***/ 150:
 /***/ (function(module, exports) {
 
-module.exports = "<app-tweet [tweet]=\"tweets[currentTweetIndex]\"></app-tweet>\n\n<footer>\n  <input\n    type=\"range\"\n    min=\"1\"\n    max=\"10\"\n    step=\"1\"\n    [(ngModel)]=\"speed\"\n    >\n\n  by <a href=\"http://jessepinho.com\" target=\"_blank\">@jessepinho</a>\n</footer>\n"
+module.exports = "<app-tweet [tweet]=\"tweets[currentTweetIndex]\"></app-tweet>\n\n<footer>\n  <input\n    type=\"range\"\n    min=\"0\"\n    step=\"1\"\n    [max]=\"tweets.length - 1\"\n    [(ngModel)]=\"currentTweetIndex\"\n    >\n\n  <input\n    type=\"range\"\n    min=\"0\"\n    max=\"0.99\"\n    step=\"0.01\"\n    [(ngModel)]=\"speed\"\n    >\n\n  by <a href=\"http://jessepinho.com\" target=\"_blank\">@jessepinho</a>\n</footer>\n"
 
 /***/ }),
 
@@ -326,7 +326,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-var NORMAL_SKIN_TONE = '#edb48e';
+var NORMAL_SKIN_TONE = '#ffe9bf';
 var NEXT_LEVEL_SKIN_TONE = '#ff6f00';
 var FaceComponent = (function () {
     function FaceComponent() {
@@ -443,26 +443,23 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-var BASE_SPEED = 2500;
+var MAX_DURATION_PER_TWEET = 5000;
 var TimelineComponent = (function () {
     function TimelineComponent(service) {
         this.service = service;
-        this.currentTweetIndex = 0;
-        this.speed = 5;
+        this.currentTweetIndex = -1;
+        this.speed = 0.95;
         this.tweets = this.service.getTweets();
     }
     TimelineComponent.prototype.ngOnInit = function () {
-        var _this = this;
-        setTimeout(function () {
-            _this.nextTweet();
-        });
+        this.nextTweet();
     };
     TimelineComponent.prototype.nextTweet = function () {
         this.currentTweetIndex++;
         if (this.currentTweetIndex >= this.tweets.length) {
             this.currentTweetIndex = 0;
         }
-        setTimeout(this.nextTweet.bind(this), BASE_SPEED / this.speed);
+        setTimeout(this.nextTweet.bind(this), MAX_DURATION_PER_TWEET * (1 - this.speed));
     };
     return TimelineComponent;
 }());
