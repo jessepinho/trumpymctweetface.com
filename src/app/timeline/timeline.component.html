@@ -1,24 +1,29 @@
 <app-tweet [tweet]="tweets[currentTweetIndex]"></app-tweet>
 
 <footer>
-  <input
-    type="range"
-    min="0"
-    step="1"
-    [max]="tweets.length - 1"
-    [(ngModel)]="currentTweetIndex"
-    >
+  <div>
+    <input
+      type="range"
+      min="0"
+      step="1"
+      [max]="tweets.length - 1"
+      [(ngModel)]="currentTweetIndex"
+      >
 
-  <input
-    type="range"
-    min="0"
-    max="0.99"
-    step="0.01"
-    [(ngModel)]="speed"
-    >
+    <input
+      type="range"
+      min="0"
+      max="0.99"
+      step="0.01"
+      [(ngModel)]="speed"
+      >
+  </div>
 
   <span>
     Louder tweets = oranger face.
     By <a href="https://twitter.com/jessepinho" target="_blank">@jessepinho</a>.
+    <a href="https://github.com/jessepinho/trumpymctweetface.com" target="_blank">
+      <img src="/assets/github.svg" alt="GitHub" class="github">
+    </a>
   </span>
 </footer>
