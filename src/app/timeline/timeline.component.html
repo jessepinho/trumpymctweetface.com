@@ -4,6 +4,14 @@
   <input
     type="range"
     min="0"
+    step="1"
+    [max]="tweets.length - 1"
+    [(ngModel)]="currentTweetIndex"
+    >
+
+  <input
+    type="range"
+    min="0"
     max="0.99"
     step="0.01"
     [(ngModel)]="speed"
