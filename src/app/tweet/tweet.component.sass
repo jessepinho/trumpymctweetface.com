@@ -1,0 +1,37 @@
+app-face
+  width: 100%
+
+.face
+  display: flex
+  justify-content: center
+  max-height: 200px
+
+  @media only screen and (min-width: 640px)
+    max-height: none
+
+.face,
+.text
+  box-sizing: border-box
+  padding: 1rem
+
+  @media only screen and (min-width: 640px)
+    width: 50%
+
+.text
+  color: black
+  line-height: 1.5em
+  text-decoration: none
+
+  @media only screen and (min-width: 640px)
+    font-size: 2rem
+
+  @media only screen and (min-width: 1024px)
+    font-size: 3rem
+
+.wrapper
+  display: flex
+  flex-direction: column
+  width: 100%
+
+  @media only screen and (min-width: 640px)
+    flex-direction: row

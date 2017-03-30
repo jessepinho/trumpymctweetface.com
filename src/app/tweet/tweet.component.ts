@@ -11,7 +11,7 @@ import { TwitterService } from '../twitter.service';
 @Component({
   selector: 'app-tweet',
   templateUrl: './tweet.component.html',
-  styleUrls: ['./tweet.component.css']
+  styleUrls: ['./tweet.component.sass']
 })
 export class TweetComponent implements OnChanges {
   @Input() private tweet: Tweet;
