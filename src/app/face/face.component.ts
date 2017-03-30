@@ -8,7 +8,7 @@ import * as d3 from 'd3';
 
 import { SvgComponent } from '../svg/svg.component';
 
-const NORMAL_SKIN_TONE = '#edb48e';
+const NORMAL_SKIN_TONE = '#ffe9bf';
 const NEXT_LEVEL_SKIN_TONE = '#ff6f00';
 
 @Component({
