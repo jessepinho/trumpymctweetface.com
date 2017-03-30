@@ -62,7 +62,7 @@ exports = module.exports = __webpack_require__(13)();
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, "app-tweet {\n  position: absolute;\n  z-index: 1;\n\n  bottom: 0;\n  left: 0;\n  right: 0;\n  top: 0;\n}\n\nfooter {\n  position: absolute;\n  bottom: 0;\n  right: 0;\n  z-index: 2;\n\n  padding: 1rem;\n}\n", ""]);
 
 // exports
 
@@ -80,7 +80,7 @@ exports = module.exports = __webpack_require__(13)();
 
 
 // module
-exports.push([module.i, ":host {\n  position: absolute;\n\n  bottom: 0;\n  left: 0;\n  right: 0;\n  top: 0;\n}\n\n.face,\n.text {\n  box-sizing: border-box;\n  padding: 1rem;\n  width: 50%;\n}\n\n.text {\n  font-family: 'Gloria Hallelujah', sans-serif;\n  font-size: 3rem;\n  line-height: 1.5em;\n}\n\n.wrapper {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  height: 100%;\n}\n", ""]);
+exports.push([module.i, ".face,\n.text {\n  box-sizing: border-box;\n  padding: 1rem;\n  width: 50%;\n}\n\n.text {\n  font-size: 3rem;\n  line-height: 1.5em;\n}\n\n.wrapper {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  height: 100%;\n}\n", ""]);
 
 // exports
 
@@ -114,7 +114,7 @@ module.exports = "<svg id=\"illustration\" xmlns=\"http://www.w3.org/2000/svg\" 
 /***/ 150:
 /***/ (function(module, exports) {
 
-module.exports = "<app-tweet [tweet]=\"tweets[currentTweetIndex]\"></app-tweet>\n"
+module.exports = "<app-tweet [tweet]=\"tweets[currentTweetIndex]\"></app-tweet>\n\n<footer>\n  <input\n    type=\"range\"\n    min=\"1\"\n    max=\"10\"\n    step=\"1\"\n    [(ngModel)]=\"speed\"\n    >\n\n  by <a href=\"http://jessepinho.com\" target=\"_blank\">@jessepinho</a>\n</footer>\n"
 
 /***/ }),
 
@@ -443,20 +443,26 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+var BASE_SPEED = 2500;
 var TimelineComponent = (function () {
     function TimelineComponent(service) {
         this.service = service;
         this.currentTweetIndex = 0;
+        this.speed = 5;
         this.tweets = this.service.getTweets();
     }
     TimelineComponent.prototype.ngOnInit = function () {
         var _this = this;
-        setInterval(function () {
-            _this.currentTweetIndex++;
-            if (_this.currentTweetIndex >= _this.tweets.length) {
-                _this.currentTweetIndex = 0;
-            }
-        }, 500);
+        setTimeout(function () {
+            _this.nextTweet();
+        });
+    };
+    TimelineComponent.prototype.nextTweet = function () {
+        this.currentTweetIndex++;
+        if (this.currentTweetIndex >= this.tweets.length) {
+            this.currentTweetIndex = 0;
+        }
+        setTimeout(this.nextTweet.bind(this), BASE_SPEED / this.speed);
     };
     return TimelineComponent;
 }());
