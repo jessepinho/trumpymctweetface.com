@@ -9,7 +9,7 @@ const MAX_DURATION_PER_TWEET = 5000;
   styleUrls: ['./timeline.component.css']
 })
 export class TimelineComponent implements OnInit {
-  private currentTweetIndex: number = 0;
+  private currentTweetIndex: number = -1;
   private speed: number = 0.95;
   private tweets: Tweet[] = this.service.getTweets();
 
@@ -18,9 +18,7 @@ export class TimelineComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    setTimeout(() => {
-      this.nextTweet();
-    });
+    this.nextTweet();
   }
 
   private nextTweet(): void {
