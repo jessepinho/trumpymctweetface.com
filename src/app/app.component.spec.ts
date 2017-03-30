@@ -1,3 +1,4 @@
+import { FormsModule } from '@angular/forms';
 import { TestBed, async } from '@angular/core/testing';
 
 import { AppComponent } from './app.component';
@@ -16,6 +17,9 @@ describe('AppComponent', () => {
         SvgComponent,
         TimelineComponent,
         TweetComponent,
+      ],
+      imports: [
+        FormsModule,
       ],
       providers: [
         TwitterService,

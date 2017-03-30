@@ -1,4 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { FormsModule } from '@angular/forms';
 
 import { FaceComponent } from '../face/face.component';
 import { SvgComponent } from '../svg/svg.component';
@@ -17,6 +18,9 @@ describe('TimelineComponent', () => {
         SvgComponent,
         TimelineComponent,
         TweetComponent,
+      ],
+      imports: [
+        FormsModule,
       ],
       providers: [
         TwitterService,
