@@ -62,7 +62,7 @@ exports = module.exports = __webpack_require__(13)();
 
 
 // module
-exports.push([module.i, "app-tweet {\n  position: absolute;\n  z-index: 1;\n\n  bottom: 0;\n  left: 0;\n  right: 0;\n  top: 0;\n}\n\nfooter {\n  position: absolute;\n  bottom: 0;\n  right: 0;\n  z-index: 2;\n\n  padding: 1rem;\n}\n", ""]);
+exports.push([module.i, "app-tweet {\n  position: absolute;\n  z-index: 1;\n\n  bottom: 0;\n  left: 0;\n  right: 0;\n  top: 0;\n}\n\nfooter {\n  position: absolute;\n  bottom: 0;\n  right: 0;\n  z-index: 2;\n\n  display: -webkit-box;\n\n  display: -ms-flexbox;\n\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  -webkit-box-align: end;\n      -ms-flex-align: end;\n          align-items: flex-end;\n\n  padding: 1rem;\n}\n\n.github {\n  vertical-align: middle;\n  width: 20px;\n}\n", ""]);
 
 // exports
 
@@ -80,7 +80,7 @@ exports = module.exports = __webpack_require__(13)();
 
 
 // module
-exports.push([module.i, ".face,\n.text {\n  box-sizing: border-box;\n  padding: 1rem;\n  width: 50%;\n}\n\n.text {\n  font-size: 3rem;\n  line-height: 1.5em;\n}\n\n.wrapper {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  height: 100%;\n}\n", ""]);
+exports.push([module.i, ".face,\n.text {\n  box-sizing: border-box;\n  padding: 1rem;\n  width: 50%;\n}\n\n.text {\n  color: black;\n  font-size: 3rem;\n  line-height: 1.5em;\n  text-decoration: none;\n}\n\n.wrapper {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  height: 100%;\n}\n", ""]);
 
 // exports
 
@@ -114,14 +114,14 @@ module.exports = "<svg id=\"illustration\" xmlns=\"http://www.w3.org/2000/svg\" 
 /***/ 150:
 /***/ (function(module, exports) {
 
-module.exports = "<app-tweet [tweet]=\"tweets[currentTweetIndex]\"></app-tweet>\n\n<footer>\n  <input\n    type=\"range\"\n    min=\"0\"\n    step=\"1\"\n    [max]=\"tweets.length - 1\"\n    [(ngModel)]=\"currentTweetIndex\"\n    >\n\n  <input\n    type=\"range\"\n    min=\"0\"\n    max=\"0.99\"\n    step=\"0.01\"\n    [(ngModel)]=\"speed\"\n    >\n\n  by <a href=\"http://jessepinho.com\" target=\"_blank\">@jessepinho</a>\n</footer>\n"
+module.exports = "<app-tweet [tweet]=\"tweets[currentTweetIndex]\"></app-tweet>\n\n<footer>\n  <div>\n    <input\n      type=\"range\"\n      min=\"0\"\n      step=\"1\"\n      [max]=\"tweets.length - 1\"\n      [(ngModel)]=\"currentTweetIndex\"\n      >\n\n    <input\n      type=\"range\"\n      min=\"0\"\n      max=\"0.99\"\n      step=\"0.01\"\n      [(ngModel)]=\"speed\"\n      >\n  </div>\n\n  <span>\n    Louder tweets = oranger face.\n    By <a href=\"https://twitter.com/jessepinho\" target=\"_blank\">@jessepinho</a>.\n    <a href=\"https://github.com/jessepinho/trumpymctweetface.com\" target=\"_blank\">\n      <img src=\"/assets/github.svg\" alt=\"GitHub\" class=\"github\">\n    </a>\n  </span>\n</footer>\n"
 
 /***/ }),
 
 /***/ 151:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"wrapper\">\n  <div class=\"face\">\n    <app-face [intensity]=\"intensity\"></app-face>\n  </div>\n  <span class=\"text\">{{tweet?.text}}</span>\n</div>\n"
+module.exports = "<div class=\"wrapper\">\n  <div class=\"face\">\n    <app-face [intensity]=\"intensity\"></app-face>\n  </div>\n  <a\n    href=\"https://twitter.com/realDonaldTrump/status/{{tweet?.id_str}}\"\n    target=\"_blank\"\n    class=\"text\"\n    >\n    {{tweet?.text}}\n  </a>\n</div>\n"
 
 /***/ }),
 
@@ -155,8 +155,8 @@ var TwitterService = (function () {
     }
     TwitterService.prototype.getTweets = function () {
         return __WEBPACK_IMPORTED_MODULE_2__twitter_service_data__["a" /* default */].map(function (_a) {
-            var text = _a.text;
-            return ({ text: text });
+            var id_str = _a.id_str, text = _a.text;
+            return ({ id_str: id_str, text: text });
         });
     };
     TwitterService.prototype.getTweetIntensity = function (tweet) {
