@@ -62,7 +62,7 @@ exports = module.exports = __webpack_require__(13)();
 
 
 // module
-exports.push([module.i, "svg {\n  height: 100%;\n  width: 100%;\n}\n", ""]);
+exports.push([module.i, "svg {\n  max-height: 100%;\n  width: 100%;\n}\n", ""]);
 
 // exports
 
