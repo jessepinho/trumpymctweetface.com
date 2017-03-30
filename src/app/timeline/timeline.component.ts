@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TwitterService } from '../twitter.service';
 
-const BASE_SPEED = 2500;
+const MAX_DURATION_PER_TWEET = 5000;
 
 @Component({
   selector: 'app-timeline',
@@ -10,7 +10,7 @@ const BASE_SPEED = 2500;
 })
 export class TimelineComponent implements OnInit {
   private currentTweetIndex: number = 0;
-  private speed: number = 5;
+  private speed: number = 0.95;
   private tweets: Tweet[] = this.service.getTweets();
 
   constructor(
@@ -30,6 +30,6 @@ export class TimelineComponent implements OnInit {
       this.currentTweetIndex = 0;
     }
 
-    setTimeout(this.nextTweet.bind(this), BASE_SPEED / this.speed);
+    setTimeout(this.nextTweet.bind(this), MAX_DURATION_PER_TWEET * (1 - this.speed));
   }
 }
