@@ -62,10 +62,10 @@ module.exports = function() {
 
 exports = module.exports = __webpack_require__(13)();
 // imports
-exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Gloria+Hallelujah);", ""]);
+
 
 // module
-exports.push([module.i, "body {\n  margin: 0;\n  padding: 0;\n\n  font-family: 'Gloria Hallelujah', sans-serif;\n}\n\nbody,\nhtml {\n  height: 100%;\n}\n", ""]);
+exports.push([module.i, "body {\n  margin: 0;\n  padding: 0;\n}\n\nbody,\nhtml {\n  height: 100%;\n}\n", ""]);
 
 // exports
 
