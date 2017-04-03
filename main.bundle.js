@@ -26,7 +26,7 @@ exports = module.exports = __webpack_require__(13)();
 
 
 // module
-exports.push([module.i, "app-face {\n  display: block;\n  -webkit-transform: scale(1.25) translate(-20%, 5%);\n          transform: scale(1.25) translate(-20%, 5%); }\n\n.face {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  max-height: 200px; }\n  @media only screen and (min-width: 640px) {\n    .face {\n      max-height: none; } }\n\n.face,\n.text {\n  box-sizing: border-box;\n  padding: 1rem; }\n  @media only screen and (min-width: 640px) {\n    .face,\n    .text {\n      width: 50%; } }\n\n.text {\n  color: black;\n  font-size: 1.5rem;\n  line-height: 1.5em;\n  overflow: hidden;\n  text-decoration: none; }\n  @media only screen and (min-width: 640px) {\n    .text {\n      font-size: 2rem; } }\n  @media only screen and (min-width: 1024px) {\n    .text {\n      font-size: 3rem; } }\n\n.wrapper {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  width: 100%; }\n  @media only screen and (min-width: 640px) {\n    .wrapper {\n      -webkit-box-orient: horizontal;\n      -webkit-box-direction: normal;\n          -ms-flex-direction: row;\n              flex-direction: row; } }\n", ""]);
+exports.push([module.i, ":host {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  height: 100%;\n  width: 100%; }\n\napp-tweet {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  height: 100%; }\n\nfooter {\n  display: none;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  -webkit-box-align: end;\n      -ms-flex-align: end;\n          align-items: flex-end;\n  -webkit-box-flex: 0;\n      -ms-flex-positive: 0;\n          flex-grow: 0;\n  -ms-flex-negative: 0;\n      flex-shrink: 0;\n  padding: 1rem; }\n  @media only screen and (min-width: 640px) {\n    footer {\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex; } }\n\n.github {\n  vertical-align: middle;\n  width: 20px; }\n", ""]);
 
 // exports
 
@@ -44,7 +44,7 @@ exports = module.exports = __webpack_require__(13)();
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, "app-face {\n  display: block;\n  width: 100%; }\n\n.face {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex; }\n  @media only screen and (min-width: 640px) {\n    .face {\n      max-height: none; } }\n\n.face,\n.text {\n  box-sizing: border-box;\n  -ms-flex-negative: 0;\n      flex-shrink: 0;\n  padding: 1rem;\n  width: 100%; }\n  @media only screen and (min-width: 640px) {\n    .face,\n    .text {\n      width: 50%; } }\n\n.text {\n  overflow: hidden;\n  color: black;\n  font-size: 1.5rem;\n  line-height: 1.5em;\n  text-decoration: none; }\n  @media only screen and (min-width: 640px) {\n    .text {\n      font-size: 2rem; } }\n  @media only screen and (min-width: 1024px) {\n    .text {\n      font-size: 3rem; } }\n\n.wrapper {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  width: 100%; }\n  @media only screen and (min-width: 640px) {\n    .wrapper {\n      -webkit-box-orient: horizontal;\n      -webkit-box-direction: normal;\n          -ms-flex-direction: row;\n              flex-direction: row; } }\n", ""]);
 
 // exports
 
@@ -62,7 +62,7 @@ exports = module.exports = __webpack_require__(13)();
 
 
 // module
-exports.push([module.i, "svg {\n  max-height: 100%;\n  width: 100%;\n}\n", ""]);
+exports.push([module.i, "", ""]);
 
 // exports
 
@@ -80,7 +80,7 @@ exports = module.exports = __webpack_require__(13)();
 
 
 // module
-exports.push([module.i, ":host {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  height: 100%;\n  width: 100%;\n}\n\napp-tweet {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  height: 100%;\n}\n\nfooter {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  -webkit-box-align: end;\n      -ms-flex-align: end;\n          align-items: flex-end;\n\n  -webkit-box-flex: 0;\n\n      -ms-flex-positive: 0;\n\n          flex-grow: 0;\n  -ms-flex-negative: 0;\n      flex-shrink: 0;\n\n  padding: 1rem;\n}\n\n.github {\n  vertical-align: middle;\n  width: 20px;\n}\n", ""]);
+exports.push([module.i, "svg {\n  max-height: 100%;\n  width: 100%;\n}\n", ""]);
 
 // exports
 
@@ -238,7 +238,7 @@ AppComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_4" /* Component */])({
         selector: 'app-root',
         template: __webpack_require__(147),
-        styles: [__webpack_require__(143)]
+        styles: [__webpack_require__(144)]
     })
 ], AppComponent);
 
@@ -431,7 +431,7 @@ SvgComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_4" /* Component */])({
         selector: 'app-svg',
         template: __webpack_require__(149),
-        styles: [__webpack_require__(144)]
+        styles: [__webpack_require__(145)]
     }),
     __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["L" /* ElementRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["L" /* ElementRef */]) === "function" && _b || Object])
 ], SvgComponent);
@@ -483,7 +483,7 @@ TimelineComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_4" /* Component */])({
         selector: 'app-timeline',
         template: __webpack_require__(150),
-        styles: [__webpack_require__(145)]
+        styles: [__webpack_require__(142)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__twitter_service__["a" /* TwitterService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__twitter_service__["a" /* TwitterService */]) === "function" && _a || Object])
 ], TimelineComponent);
@@ -530,7 +530,7 @@ TweetComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_4" /* Component */])({
         selector: 'app-tweet',
         template: __webpack_require__(151),
-        styles: [__webpack_require__(142)]
+        styles: [__webpack_require__(143)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__twitter_service__["a" /* TwitterService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__twitter_service__["a" /* TwitterService */]) === "function" && _a || Object])
 ], TweetComponent);
