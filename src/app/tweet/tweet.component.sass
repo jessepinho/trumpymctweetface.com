@@ -6,7 +6,12 @@ app-face
   display: flex
 
   @media only screen and (min-width: 640px)
+    align-items: center
     max-height: none
+    padding: 0
+
+  @media only screen and (min-width: 640px) and (max-aspect-ratio: 2/1)
+    transform: scale(1.1) translateX(-10%)
 
 .face,
 .text
@@ -33,6 +38,7 @@ app-face
     font-size: 3rem
 
 .wrapper
+  align-items: center
   display: flex
   flex-direction: column
   width: 100%
