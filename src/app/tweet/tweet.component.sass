@@ -1,17 +1,20 @@
 app-face
   display: block
+  height: 100%
   width: 100%
 
 .face
   display: flex
+  height: 100%
 
   @media only screen and (min-width: 640px)
     align-items: center
     max-height: none
     padding: 0
+    transform: scale(1.1) translate(-10%, -8%)
 
-  @media only screen and (min-width: 640px) and (max-aspect-ratio: 2/1)
-    transform: scale(1.1) translateX(-10%)
+  @media only screen and (max-aspect-ratio: 4/3)
+    height: initial
 
 .face,
 .text
