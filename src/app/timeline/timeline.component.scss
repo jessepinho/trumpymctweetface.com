@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
 :host {
   display: flex;
   flex-direction: column;
@@ -21,13 +23,8 @@ footer {
 
   padding: 1rem;
 
-//   @media only screen and (min-width: 640px) {
-//     display: flex;
-//     position: fixed;
-//     bottom: 0;
-//     left: 0;
-//     right: 0;
-//   }
+  font-family: 'Roboto Mono', sans-serif;
+  font-size: 0.7rem;
 }
 
 .github {
