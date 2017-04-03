@@ -6,7 +6,7 @@ const MAX_DURATION_PER_TWEET = 5000;
 @Component({
   selector: 'app-timeline',
   templateUrl: './timeline.component.html',
-  styleUrls: ['./timeline.component.css']
+  styleUrls: ['./timeline.component.scss']
 })
 export class TimelineComponent implements OnInit {
   private currentTweetIndex: number = -1;

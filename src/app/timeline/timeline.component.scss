@@ -12,7 +12,7 @@ app-tweet {
 }
 
 footer {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: flex-end;
 
@@ -20,6 +20,10 @@ footer {
   flex-shrink: 0;
 
   padding: 1rem;
+
+  @media only screen and (min-width: 640px) {
+    display: flex;
+  }
 }
 
 .github {

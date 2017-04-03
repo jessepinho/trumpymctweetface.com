@@ -1,10 +1,9 @@
 app-face
+  display: block
   width: 100%
 
 .face
   display: flex
-  justify-content: center
-  max-height: 200px
 
   @media only screen and (min-width: 640px)
     max-height: none
@@ -12,16 +11,19 @@ app-face
 .face,
 .text
   box-sizing: border-box
+  flex-shrink: 0
   padding: 1rem
+  width: 100%
 
   @media only screen and (min-width: 640px)
     width: 50%
 
 .text
+  overflow: hidden
+
   color: black
   font-size: 1.5rem
   line-height: 1.5em
-  overflow: hidden
   text-decoration: none
 
   @media only screen and (min-width: 640px)
