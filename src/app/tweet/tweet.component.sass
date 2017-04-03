@@ -4,38 +4,36 @@ app-face
   width: 100%
 
 .face
+  box-sizing: border-box
   display: flex
   height: 100%
+  padding: 1rem
+  width: 100%
 
   @media only screen and (min-width: 640px)
     align-items: center
     max-height: none
     padding: 0
-    transform: scale(1.1) translate(-10%, -8%)
+    transform: scale(1.25) translate(-10%, 2%)
+    width: 50%
 
   @media only screen and (max-aspect-ratio: 4/3)
     height: initial
 
-.face,
 .text
   box-sizing: border-box
-  flex-shrink: 0
-  padding: 1rem
-  width: 100%
-
-  @media only screen and (min-width: 640px)
-    width: 50%
-
-.text
-  overflow: hidden
-
   color: black
   font-size: 1.5rem
   line-height: 1.5em
+  padding: 1rem
   text-decoration: none
+  width: 100%
 
   @media only screen and (min-width: 640px)
     font-size: 2rem
+    max-height: 100%
+    overflow: hidden
+    width: 50%
 
   @media only screen and (min-width: 1024px)
     font-size: 3rem
