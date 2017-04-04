@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+
 import { TwitterService } from '../twitter.service';
+import packageJSON from '../../../package.json';
 
 const MAX_DURATION_PER_TWEET = 5000;
 
@@ -13,6 +15,7 @@ export class TimelineComponent implements OnInit {
   private speed: number = 0.95;
   private timeout: number;
   private tweets: Tweet[] = this.service.getTweets();
+  private version: string = 'v' + packageJSON.version;
 
   constructor(
     private service: TwitterService,
