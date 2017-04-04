@@ -114,7 +114,7 @@ module.exports = "<svg id=\"illustration\" xmlns=\"http://www.w3.org/2000/svg\" 
 /***/ 150:
 /***/ (function(module, exports) {
 
-module.exports = "<app-tweet [tweet]=\"tweets[currentTweetIndex]\"></app-tweet>\n\n<footer>\n  <div>\n    <input\n      type=\"range\"\n      min=\"0\"\n      step=\"1\"\n      [max]=\"tweets.length - 1\"\n      [(ngModel)]=\"currentTweetIndex\"\n      >\n\n    <input\n      type=\"range\"\n      min=\"0\"\n      max=\"0.99\"\n      step=\"0.01\"\n      [(ngModel)]=\"speed\"\n      >\n  </div>\n\n  <span>\n    Louder tweets = oranger face.\n    By <a href=\"https://twitter.com/jessepinho\" target=\"_blank\">@jessepinho</a>.\n    <a href=\"https://github.com/jessepinho/trumpymctweetface.com\" target=\"_blank\">\n      <img src=\"/assets/github.svg\" alt=\"GitHub\" class=\"github\">\n    </a>\n  </span>\n</footer>\n"
+module.exports = "<app-tweet [tweet]=\"tweets[currentTweetIndex]\"></app-tweet>\n\n<footer>\n  <div>\n    <input\n      type=\"range\"\n      min=\"0\"\n      step=\"1\"\n      [max]=\"tweets.length - 1\"\n      [(ngModel)]=\"currentTweetIndex\"\n      >\n\n    <input\n      type=\"range\"\n      min=\"0\"\n      max=\"0.99\"\n      step=\"0.01\"\n      [ngModel]=\"speed\"\n      (ngModelChange)=\"handleSpeedChange($event)\"\n      >\n  </div>\n\n  <span>\n    Louder tweets = oranger face.\n    By <a href=\"https://twitter.com/jessepinho\" target=\"_blank\">@jessepinho</a>.\n    <a href=\"https://github.com/jessepinho/trumpymctweetface.com\" target=\"_blank\">\n      <img src=\"/assets/github.svg\" alt=\"GitHub\" class=\"github\">\n    </a>\n  </span>\n</footer>\n"
 
 /***/ }),
 
@@ -475,7 +475,17 @@ var TimelineComponent = (function () {
         if (this.currentTweetIndex >= this.tweets.length) {
             this.currentTweetIndex = 0;
         }
-        setTimeout(this.nextTweet.bind(this), MAX_DURATION_PER_TWEET * (1 - this.speed));
+        this.play();
+    };
+    TimelineComponent.prototype.play = function () {
+        this.timeout = setTimeout(this.nextTweet.bind(this), MAX_DURATION_PER_TWEET * (1 - this.speed));
+    };
+    TimelineComponent.prototype.handleSpeedChange = function (speed) {
+        this.speed = speed;
+        clearTimeout(this.timeout);
+        if (speed !== 0) {
+            this.play();
+        }
     };
     return TimelineComponent;
 }());
