@@ -1,3 +1,8 @@
+### 1.1.1
+
+* [`f8b51ac`](https://github.com/jessepinho/trumpymctweetface.com/commit/f8b51acc3af7483ecc8ed0aacea723c1d2ad71c1) **fix:** fix failing tests due to Node require issues
+
+
 ### 1.1.0
 
 * [`6b900e9`](https://github.com/jessepinho/trumpymctweetface.com/commit/6b900e9c0cdb7f26660bfb0623ad9bd9d576a230) **feat:** release via nlm as part of deploy
