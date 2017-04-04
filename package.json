@@ -9,7 +9,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "npm run update-tweets && ng build && cp ./CNAME ./dist/CNAME && ngh",
+    "deploy": "npm run nlm release --commit && npm run update-tweets && ng build && cp ./CNAME ./dist/CNAME && ngh",
     "update-tweets": "ts-node ./scripts/update-tweets"
   },
   "private": true,
