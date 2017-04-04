@@ -13,6 +13,7 @@
     "update-tweets": "ts-node ./scripts/update-tweets"
   },
   "private": true,
+  "repository": "git:jessepinho/trumpymctweetface.com",
   "dependencies": {
     "@angular/common": "^4.0.0",
     "@angular/compiler": "^4.0.0",
