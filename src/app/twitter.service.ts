@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 
 import { intensity } from './helpers/intensity';
-import tweets from './twitter.service.data.json';
+const tweets = require('./twitter.service.data.json');
 
 @Injectable()
 export class TwitterService {

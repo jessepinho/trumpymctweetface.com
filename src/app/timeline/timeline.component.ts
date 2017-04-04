@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { TwitterService } from '../twitter.service';
-import packageJSON from '../../../package.json';
+const packageJSON = require('../../../package.json');
 
 const MAX_DURATION_PER_TWEET = 5000;
 
