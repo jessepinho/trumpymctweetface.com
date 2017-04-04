@@ -9,7 +9,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "ng build && cp ./CNAME ./dist/CNAME && ngh"
+    "deploy": "ng build && cp ./CNAME ./dist/CNAME && ngh",
+    "update-tweets": "ts-node ./scripts/update-tweets"
   },
   "private": true,
   "dependencies": {
@@ -39,12 +40,13 @@
     "karma": "~1.4.1",
     "karma-chrome-launcher": "~2.0.0",
     "karma-cli": "~1.0.1",
+    "karma-coverage-istanbul-reporter": "^0.2.0",
     "karma-jasmine": "~1.1.0",
     "karma-jasmine-html-reporter": "^0.2.2",
-    "karma-coverage-istanbul-reporter": "^0.2.0",
     "protractor": "~5.1.0",
     "ts-node": "~2.0.0",
     "tslint": "~4.5.0",
+    "twitter": "^1.7.0",
     "typescript": "~2.2.0"
   }
 }
