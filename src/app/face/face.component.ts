@@ -57,7 +57,7 @@ export class FaceComponent implements OnChanges {
     }
   }
 
-  private handleSVGLoaded(svg: SVGSVGElement): void {
+  handleSVGLoaded(svg: SVGSVGElement): void {
     this.selection = d3.select(svg);
 
     this.face = this.selection.select('#face');

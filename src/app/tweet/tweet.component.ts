@@ -14,13 +14,12 @@ import { TwitterService } from '../twitter.service';
   styleUrls: ['./tweet.component.sass']
 })
 export class TweetComponent implements OnChanges {
-  @Input() private tweet: Tweet;
+  @Input() tweet: Tweet;
+  intensity: number;
 
   constructor(
     private service: TwitterService,
   ) {}
-
-  private intensity: number;
 
   ngOnChanges(changes: SimpleChanges) {
     if (changes.hasOwnProperty('tweet')) {
