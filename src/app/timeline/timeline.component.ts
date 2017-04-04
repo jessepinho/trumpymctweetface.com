@@ -11,6 +11,7 @@ const MAX_DURATION_PER_TWEET = 5000;
 export class TimelineComponent implements OnInit {
   private currentTweetIndex: number = -1;
   private speed: number = 0.95;
+  private timeout: number;
   private tweets: Tweet[] = this.service.getTweets();
 
   constructor(
@@ -28,6 +29,19 @@ export class TimelineComponent implements OnInit {
       this.currentTweetIndex = 0;
     }
 
-    setTimeout(this.nextTweet.bind(this), MAX_DURATION_PER_TWEET * (1 - this.speed));
+    this.play();
+  }
+
+  private play() {
+    this.timeout = setTimeout(this.nextTweet.bind(this), MAX_DURATION_PER_TWEET * (1 - this.speed));
+  }
+
+  private handleSpeedChange(speed: number): void {
+    this.speed = speed;
+    clearTimeout(this.timeout);
+
+    if (speed !== 0) {
+      this.play();
+    }
   }
 }
