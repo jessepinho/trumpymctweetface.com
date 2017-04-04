@@ -1,3 +1,8 @@
+### 1.1.2
+
+* [`3a3b337`](https://github.com/jessepinho/trumpymctweetface.com/commit/3a3b337d0c3e98531574092a415c3e00c565357b) **fix:** use full URL for git
+
+
 ### 1.1.1
 
 * [`f8b51ac`](https://github.com/jessepinho/trumpymctweetface.com/commit/f8b51acc3af7483ecc8ed0aacea723c1d2ad71c1) **fix:** fix failing tests due to Node require issues
