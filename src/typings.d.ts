@@ -8,3 +8,8 @@ interface Tweet {
   id_str: string;
   text: string;
 }
+
+declare module "*.json" {
+  const value: any;
+  export default value;
+}
