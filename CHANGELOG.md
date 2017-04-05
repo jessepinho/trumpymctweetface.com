@@ -1,3 +1,8 @@
+### 1.1.4
+
+* [`f9c2dfe`](https://github.com/jessepinho/trumpymctweetface.com/commit/f9c2dfe61bbf3ad4b9496a2ae5f32658a8b88f47) **chore:** use prod builds for deploying
+
+
 ### 1.1.3
 
 * fix: fix private vs. public properties so as to allow prod builds - **[@jessepinho](https://github.com/jessepinho)** [#1](https://github.com/jessepinho/trumpymctweetface.com/pull/1)
