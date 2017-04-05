@@ -1,3 +1,10 @@
+### 1.1.5
+
+* [`cb5d5ad`](https://github.com/jessepinho/trumpymctweetface.com/commit/cb5d5ad0b219e7e8b5b926c79b3dae401d664590) **chore:** update tweets
+* [`a2c8ded`](https://github.com/jessepinho/trumpymctweetface.com/commit/a2c8ded4680eb6fdeb1726456b977846e36d1480) **fix:** make text appear in two rows on narrow screens
+* [`e0ae720`](https://github.com/jessepinho/trumpymctweetface.com/commit/e0ae7209a70275e5f040eaf3bd6907ec5f0d4451) **fix:** disable scrolling
+
+
 ### 1.1.4
 
 * [`f9c2dfe`](https://github.com/jessepinho/trumpymctweetface.com/commit/f9c2dfe61bbf3ad4b9496a2ae5f32658a8b88f47) **chore:** use prod builds for deploying
