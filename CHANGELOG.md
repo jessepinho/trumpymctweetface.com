@@ -1,3 +1,9 @@
+### 1.1.3
+
+* fix: fix private vs. public properties so as to allow prod builds - **[@jessepinho](https://github.com/jessepinho)** [#1](https://github.com/jessepinho/trumpymctweetface.com/pull/1)
+  - [`02252d1`](https://github.com/jessepinho/trumpymctweetface.com/commit/02252d1bad05830dfd00652c29229bb9227c96e5) **fix:** fix private vs. public properties so as to allow prod builds
+
+
 ### 1.1.2
 
 * [`3a3b337`](https://github.com/jessepinho/trumpymctweetface.com/commit/3a3b337d0c3e98531574092a415c3e00c565357b) **fix:** use full URL for git
