@@ -27,6 +27,17 @@ footer {
   font-size: 0.7rem;
 }
 
+.explanation {
+  text-align: right;
+
+  display: flex;
+  flex-direction: column;
+
+  @media only screen and (min-width: 640px) {
+    display: initial;
+  }
+}
+
 .github {
   vertical-align: middle;
   width: 20px;
