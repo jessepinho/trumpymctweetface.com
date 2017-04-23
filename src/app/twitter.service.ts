@@ -18,6 +18,7 @@ export class TwitterService {
     const params = new URLSearchParams();
     params.set('count', '200');
     params.set('screen_name', 'realDonaldTrump');
+    params.set('trim_user', 'true');
 
     return this.http
       .get(endpoint, { params })
