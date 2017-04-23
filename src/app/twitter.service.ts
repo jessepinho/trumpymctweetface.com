@@ -15,6 +15,7 @@ export class TwitterService {
 
   getLatestTweets(): Observable<Tweet[]> {
     const endpoint = `${this.apiHost}/1.1/statuses/user_timeline.json`;
+
     const params = new URLSearchParams();
     params.set('count', '200');
     params.set('screen_name', 'realDonaldTrump');
@@ -32,6 +33,22 @@ export class TwitterService {
             intensity: intensity(tweet.text) / maxIntensity,
           };
         });
+      });
+  }
+
+  getTweet(id: string): Observable<Tweet> {
+    const endpoint = `${this.apiHost}/1.1/statuses/show.json`;
+
+    const params = new URLSearchParams();
+    params.set('id', id);
+    params.set('trim_user', 'true');
+    params.set('include_entities', 'false');
+
+    return this.http
+      .get(endpoint, { params })
+      .map(res => {
+        const tweet = <Tweet> res.json();
+        return { ...tweet, intensity: intensity(tweet.text) };
       });
   }
 }
