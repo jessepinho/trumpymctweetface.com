@@ -1,12 +1,12 @@
 <div class="wrapper">
   <div class="face">
-    <app-face [intensity]="intensity"></app-face>
+    <app-face [intensity]="tweet.intensity"></app-face>
   </div>
   <a
-    href="https://twitter.com/realDonaldTrump/status/{{tweet?.id_str}}"
+    href="https://twitter.com/realDonaldTrump/status/{{tweet.id_str}}"
     target="_blank"
     class="text"
     >
-    {{tweet?.text}}
+    {{tweet.text}}
   </a>
 </div>
