@@ -1,3 +1,15 @@
+### 1.2.0
+
+* [`db4f353`](https://github.com/jessepinho/trumpymctweetface.com/commit/db4f35317f70e9e330a8c01e3224576221b14605) **feat:** create API host helper and environment-specific API host strings
+* [`b56ef0f`](https://github.com/jessepinho/trumpymctweetface.com/commit/b56ef0ff2db69b731d6b33a1e609ba4f9fb80049) **feat:** add a method for fetching latest tweets (and their intensities)
+* [`64cc245`](https://github.com/jessepinho/trumpymctweetface.com/commit/64cc2456770bc569e573864cd0f6499c3153e2bf) **feat:** use new service method to fetch tweets
+* [`7231ce5`](https://github.com/jessepinho/trumpymctweetface.com/commit/7231ce59efaf6615c669e20338a91af62bb4ac99) **refactor:** remove unused methods/properties
+* [`f27924d`](https://github.com/jessepinho/trumpymctweetface.com/commit/f27924dcaa0df617c208e2e2fda029c0982082d1) **feat:** show a loading scream until tweets are loaded
+* [`ade4b27`](https://github.com/jessepinho/trumpymctweetface.com/commit/ade4b27ce8764159f5fe4d0169618b65b14a5a77) **refactor:** remove hard-coded tweets
+* [`12611b0`](https://github.com/jessepinho/trumpymctweetface.com/commit/12611b0aefc44e28f7cd5462e81a2b11f613449a) **test:** make tests pass by importing the app module
+* [`b031c7b`](https://github.com/jessepinho/trumpymctweetface.com/commit/b031c7b02098414c88bf73bb9714a230a7e1eb72) **chore:** remove scripts that reference updating hard-coded tweets
+
+
 ### 1.1.5
 
 * [`cb5d5ad`](https://github.com/jessepinho/trumpymctweetface.com/commit/cb5d5ad0b219e7e8b5b926c79b3dae401d664590) **chore:** update tweets
