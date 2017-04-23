@@ -10,6 +10,7 @@ import { FaceComponent } from './face/face.component';
 import { TweetComponent } from './tweet/tweet.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { TwitterService } from './twitter.service';
+import { SingleTweetComponent } from './single-tweet/single-tweet.component';
 import { SvgComponent } from './svg/svg.component';
 
 const routes: Routes = [
@@ -33,9 +34,10 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     FaceComponent,
-    TweetComponent,
+    SingleTweetComponent,
+    SvgComponent,
     TimelineComponent,
-    SvgComponent
+    TweetComponent,
   ],
   imports: [
     BrowserModule,
