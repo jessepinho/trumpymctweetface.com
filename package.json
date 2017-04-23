@@ -9,8 +9,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "nlm release --commit && npm run update-tweets && ng build -prod && cp ./CNAME ./dist/CNAME && ngh",
-    "update-tweets": "ts-node ./scripts/update-tweets"
+    "deploy": "nlm release --commit && ng build -prod && cp ./CNAME ./dist/CNAME && ngh"
   },
   "private": true,
   "repository": "https://github.com/jessepinho/trumpymctweetface.com.git",
