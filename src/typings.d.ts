@@ -9,5 +9,6 @@ interface NodeModule {
 
 interface Tweet {
   id_str: string;
+  intensity: number;
   text: string;
 }
