@@ -1,11 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { FormsModule } from '@angular/forms';
 
-import { FaceComponent } from '../face/face.component';
-import { SvgComponent } from '../svg/svg.component';
+import { AppModule } from '../app.module';
 import { TimelineComponent } from './timeline.component';
-import { TweetComponent } from '../tweet/tweet.component';
-import { TwitterService } from '../twitter.service';
 
 describe('TimelineComponent', () => {
   let component: TimelineComponent;
@@ -13,17 +9,8 @@ describe('TimelineComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [
-        FaceComponent,
-        SvgComponent,
-        TimelineComponent,
-        TweetComponent,
-      ],
       imports: [
-        FormsModule,
-      ],
-      providers: [
-        TwitterService,
+        AppModule,
       ],
     })
     .compileComponents();
