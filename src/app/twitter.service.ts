@@ -6,8 +6,6 @@ import 'rxjs/add/operator/map';
 import { APIHost } from './helpers/api-host';
 import { intensity } from './helpers/intensity';
 
-const tweets = require('./twitter.service.data.json');
-
 @Injectable()
 export class TwitterService {
   constructor(
