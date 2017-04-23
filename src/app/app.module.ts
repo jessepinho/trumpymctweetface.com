@@ -24,7 +24,7 @@ const routes: Routes = [
       },
       {
         path: 'tweet/:id',
-        component: TimelineComponent,
+        component: SingleTweetComponent,
       },
     ],
   },
