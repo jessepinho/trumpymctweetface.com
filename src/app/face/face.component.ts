@@ -37,23 +37,7 @@ export class FaceComponent implements OnChanges {
 
   ngOnChanges(changes: SimpleChanges): void {
     if (changes.hasOwnProperty('intensity') && this.selection) {
-      this.face
-        .data([this.intensity])
-        .transition()
-        .duration(250)
-        .attr('fill', d => this.faceColor(d));
-
-      this.mouthTop
-        .data([this.intensity])
-        .transition()
-        .duration(250)
-        .attr('transform', d => `translate(0, -${this.mouthOpening(d)})`);
-
-      this.mouthBottom
-        .data([this.intensity])
-        .transition()
-        .duration(250)
-        .attr('transform', d => `translate(0, ${this.mouthOpening(d)})`);
+      this.transformFace();
     }
   }
 
@@ -63,5 +47,27 @@ export class FaceComponent implements OnChanges {
     this.face = this.selection.select('#face');
     this.mouthTop = this.selection.select('#mouthTop');
     this.mouthBottom = this.selection.select('#mouthBottom');
+
+    this.transformFace();
+  }
+
+  private transformFace() {
+    this.face
+      .data([this.intensity])
+      .transition()
+      .duration(250)
+      .attr('fill', d => this.faceColor(d));
+
+    this.mouthTop
+      .data([this.intensity])
+      .transition()
+      .duration(250)
+      .attr('transform', d => `translate(0, -${this.mouthOpening(d)})`);
+
+    this.mouthBottom
+      .data([this.intensity])
+      .transition()
+      .duration(250)
+      .attr('transform', d => `translate(0, ${this.mouthOpening(d)})`);
   }
 }

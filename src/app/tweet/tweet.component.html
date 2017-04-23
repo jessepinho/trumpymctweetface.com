@@ -1,12 +1,15 @@
 <div class="wrapper">
   <div class="face">
-    <app-face [intensity]="tweet.intensity"></app-face>
+    <app-face [intensity]="intensity"></app-face>
   </div>
   <a
-    href="https://twitter.com/realDonaldTrump/status/{{tweet.id_str}}"
+    href="{{link}}"
     target="_blank"
     class="text"
+    *ngIf="link"
     >
-    {{tweet.text}}
+    {{text}}
   </a>
+
+  <span class="text" *ngIf="!link">{{text}}</span>
 </div>
