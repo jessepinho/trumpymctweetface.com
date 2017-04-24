@@ -1,3 +1,8 @@
+### 1.4.0
+
+* [`aa554a1`](https://github.com/jessepinho/trumpymctweetface.com/commit/aa554a14a057fd3508c8b0cd677f21421b42cbb2) **feat:** link to the homepage from an individual tweet
+
+
 ### 1.3.1
 
 * [`2ab4bd6`](https://github.com/jessepinho/trumpymctweetface.com/commit/2ab4bd613b9d5d701f4265b93047c8f4f390b0ed) **fix:** make properties public that are accessed by the template
