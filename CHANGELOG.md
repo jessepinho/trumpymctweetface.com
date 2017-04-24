@@ -1,3 +1,13 @@
+### 1.3.0
+
+* [`d55444f`](https://github.com/jessepinho/trumpymctweetface.com/commit/d55444f6d39b8c3286a0f22d00598c1bbb58295a) **perf:** don't retrieve full user object
+* [`a0dcf60`](https://github.com/jessepinho/trumpymctweetface.com/commit/a0dcf60317fac6a31c21e0cf50a112bb35d75005) **feat:** set up basic routing
+* [`72552b1`](https://github.com/jessepinho/trumpymctweetface.com/commit/72552b1f725f617f081e14614957f19c22d53f1a) **feat:** add method to get a single tweet
+* [`a72a9f0`](https://github.com/jessepinho/trumpymctweetface.com/commit/a72a9f06e4c4c4a049f20f15e71cec78bb6f1886) **feat:** create single-tweet component
+* [`88f5cee`](https://github.com/jessepinho/trumpymctweetface.com/commit/88f5cee9b48636e74ff59bf81eab399625c5c173) **feat:** use the new single-tweet component to fetch and display a single tweet
+* [`b6f128e`](https://github.com/jessepinho/trumpymctweetface.com/commit/b6f128edc90cab3c7e26aa40532905ef5c061bb0) **refactor:** make the Tweet component composable
+
+
 ### 1.2.0
 
 * [`db4f353`](https://github.com/jessepinho/trumpymctweetface.com/commit/db4f35317f70e9e330a8c01e3224576221b14605) **feat:** create API host helper and environment-specific API host strings
