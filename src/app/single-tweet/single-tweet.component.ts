@@ -10,9 +10,10 @@ import { TwitterService } from '../twitter.service';
   styleUrls: ['./single-tweet.component.css']
 })
 export class SingleTweetComponent implements OnInit, OnDestroy {
+  loading: boolean = false;
+  tweet: Tweet;
+
   private paramsSubscription: Subscription;
-  private loading: boolean = false;
-  private tweet: Tweet;
 
   constructor(
     private route: ActivatedRoute,
