@@ -7,7 +7,7 @@ import { TwitterService } from '../twitter.service';
 @Component({
   selector: 'app-single-tweet',
   templateUrl: './single-tweet.component.html',
-  styleUrls: ['./single-tweet.component.css']
+  styleUrls: ['./single-tweet.component.sass']
 })
 export class SingleTweetComponent implements OnInit, OnDestroy {
   loading: boolean = false;
