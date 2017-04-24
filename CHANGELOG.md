@@ -1,3 +1,8 @@
+### 1.3.1
+
+* [`2ab4bd6`](https://github.com/jessepinho/trumpymctweetface.com/commit/2ab4bd613b9d5d701f4265b93047c8f4f390b0ed) **fix:** make properties public that are accessed by the template
+
+
 ### 1.3.0
 
 * [`d55444f`](https://github.com/jessepinho/trumpymctweetface.com/commit/d55444f6d39b8c3286a0f22d00598c1bbb58295a) **perf:** don't retrieve full user object
