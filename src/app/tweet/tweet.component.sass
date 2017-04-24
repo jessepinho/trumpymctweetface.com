@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
 
+\:host
+  display: flex
+  flex-direction: column
+
+  height: 100%
+  width: 100%
+
+  overflow: hidden
+
 app-face
   display: block
   height: 100%
@@ -21,6 +30,32 @@ app-face
 
   @media only screen and (max-aspect-ratio: 4/3)
     height: initial
+
+footer
+  display: flex
+  flex-direction: column
+  align-items: flex-end
+
+  flex-grow: 0
+  flex-shrink: 0
+
+  padding: 1rem
+
+  font-family: 'Roboto Mono', sans-serif
+  font-size: 0.7rem
+
+.explanation
+  text-align: right
+
+  display: flex
+  flex-direction: column
+
+  @media only screen and (min-width: 640px)
+    display: initial
+
+.github
+  vertical-align: middle
+  width: 20px
 
 .text
   box-sizing: border-box
@@ -45,6 +80,8 @@ app-face
   align-items: center
   display: flex
   flex-direction: column
+  flex-grow: 1
+  height: 100%
   width: 100%
 
   @media only screen and (min-width: 640px)

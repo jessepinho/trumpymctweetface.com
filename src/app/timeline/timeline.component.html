@@ -1,7 +1,5 @@
-<app-tweet [tweet]="tweets[currentTweetIndex]" [loading]="loading"></app-tweet>
-
-<footer>
-  <div>
+<app-tweet [tweet]="tweets[currentTweetIndex]" [loading]="loading">
+  <div footer>
     <input
       type="range"
       min="0"
@@ -19,20 +17,4 @@
       (ngModelChange)="handleSpeedChange($event)"
       >
   </div>
-
-  <span class="explanation">
-    <span>
-      Louder tweets = oranger face.
-    </span>
-    <span>
-      By <a href="https://twitter.com/jessepinho" target="_blank">@jessepinho</a>.  {{version}}
-
-      <a
-        href="https://github.com/jessepinho/trumpymctweetface.com"
-        target="_blank"
-        >
-        <img src="/assets/github.svg" alt="GitHub" class="github">
-      </a>
-    </span>
-  </span>
-</footer>
+</app-tweet>

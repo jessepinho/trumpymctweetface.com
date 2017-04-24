@@ -13,3 +13,23 @@
 
   <span class="text" *ngIf="!link">{{text}}</span>
 </div>
+
+<footer>
+  <ng-content select="[footer]"></ng-content>
+
+  <span class="explanation">
+    <span>
+      Louder tweets = oranger face.
+    </span>
+    <span>
+      By <a href="https://twitter.com/jessepinho" target="_blank">@jessepinho</a>.  {{version}}
+
+      <a
+        href="https://github.com/jessepinho/trumpymctweetface.com"
+        target="_blank"
+        >
+        <img src="/assets/github.svg" alt="GitHub" class="github">
+      </a>
+    </span>
+  </span>
+</footer>

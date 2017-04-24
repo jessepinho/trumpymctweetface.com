@@ -3,6 +3,8 @@ import {
   Input,
 } from '@angular/core';
 
+const packageJSON = require('../../../package.json');
+
 @Component({
   selector: 'app-tweet',
   templateUrl: './tweet.component.html',
@@ -15,6 +17,7 @@ export class TweetComponent {
   intensity: number;
   link: string;
   text: string;
+  version: string = 'v' + packageJSON.version;
 
   ngOnChanges(changes) {
     if (changes.hasOwnProperty('loading') && this.loading) {
