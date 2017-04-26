@@ -1,3 +1,8 @@
+### 1.4.1
+
+* [`ccc311f`](https://github.com/jessepinho/trumpymctweetface.com/commit/ccc311fa8f98ef408abeca1c1ad7fca87d7480c1) **fix:** include both fonts in the Google Fonts import
+
+
 ### 1.4.0
 
 * [`aa554a1`](https://github.com/jessepinho/trumpymctweetface.com/commit/aa554a14a057fd3508c8b0cd677f21421b42cbb2) **feat:** link to the homepage from an individual tweet
