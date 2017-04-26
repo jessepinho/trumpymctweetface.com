@@ -1,3 +1,8 @@
+### 1.5.0
+
+* [`e571971`](https://github.com/jessepinho/trumpymctweetface.com/commit/e571971f6e622fb98c5f2296a4dfb14572a2cf82) **feat:** add Twitter link and tweak GitHub logo style
+
+
 ### 1.4.1
 
 * [`ccc311f`](https://github.com/jessepinho/trumpymctweetface.com/commit/ccc311fa8f98ef408abeca1c1ad7fca87d7480c1) **fix:** include both fonts in the Google Fonts import
