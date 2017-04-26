@@ -1,6 +1,6 @@
 ![Build status](https://travis-ci.org/jessepinho/trumpymctweetface.com.svg?branch=master)
 
-# TrumpTweets
+# Trumpy McTweetface
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
@@ -27,13 +27,9 @@ Before running the tests make sure you are serving the app via `ng serve`.
 
 ## Deploying
 
-Set `TWITTER_CONSUMER_KEY`, `TWITTER_CONSUMER_SECRET`, and `TWITTER_BEARER_TOKEN` in your environment. Then:
-
 ```
 npm run deploy
 ```
-
-Note that the above command also updates the tweets in `src/app/twitter.service.data.json`. So, if it has changed, those changes will need to be committed.
 
 ## Further help
 
