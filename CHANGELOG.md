@@ -1,3 +1,13 @@
+### 1.6.0
+
+* [`e251d23`](https://github.com/jessepinho/trumpymctweetface.com/commit/e251d234d34c846e688b568041dd73557e99f0b3) **chore:** set up Travis CI
+* [`4959591`](https://github.com/jessepinho/trumpymctweetface.com/commit/495959165c2f1b3874e82781e3640f7d1d131ed3) **chore:** install Chrome-related dependencies in Travis CI
+* [`5114e91`](https://github.com/jessepinho/trumpymctweetface.com/commit/5114e9100df9756a8078a4de63dedc742c4fb42f) **chore:** update Angular to 4.1.0
+* [`19e09c7`](https://github.com/jessepinho/trumpymctweetface.com/commit/19e09c7caa6c13dc239dd7a5499e24159b967452) **chore:** add build status badge to README
+* [`55e4f56`](https://github.com/jessepinho/trumpymctweetface.com/commit/55e4f56ee73c6154f9d227f20db031b1ded67126) **chore:** update README
+* [`26ab9d9`](https://github.com/jessepinho/trumpymctweetface.com/commit/26ab9d9eb2a59dea99178ca554fbf0745fd953e9) **feat:** use the square root to get a wider range of intensities
+
+
 ### 1.5.0
 
 * [`e571971`](https://github.com/jessepinho/trumpymctweetface.com/commit/e571971f6e622fb98c5f2296a4dfb14572a2cf82) **feat:** add Twitter link and tweak GitHub logo style
