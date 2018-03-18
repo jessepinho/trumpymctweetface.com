@@ -1,3 +1,8 @@
+### 1.6.1
+
+* [`a7de1a4`](https://github.com/jessepinho/trumpymctweetface.com/commit/a7de1a425f1b2f788c8582535ba60a2715da498f) **chore:** use new Firebase functions endpoints
+
+
 ### 1.6.0
 
 * [`e251d23`](https://github.com/jessepinho/trumpymctweetface.com/commit/e251d234d34c846e688b568041dd73557e99f0b3) **chore:** set up Travis CI
