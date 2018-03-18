@@ -4,6 +4,6 @@
 // The list of which env maps to which file can be found in `.angular-cli.json`.
 
 export const environment = {
-  apiHost: 'http://localhost:5000',
+  apiHost: 'http://localhost:5000/trumpymctweetface/us-central1/api',
   production: false,
 };
