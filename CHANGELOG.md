@@ -1,3 +1,8 @@
+### 1.7.2
+
+* [`ee31f4d`](https://github.com/jessepinho/trumpymctweetface.com/commit/ee31f4d172b09479365e3081bde2ce144b0aeff3) **fix:** use yarn instead of npm
+
+
 ### 1.7.1
 
 * [`0117780`](https://github.com/jessepinho/trumpymctweetface.com/commit/0117780f48bf0aeb35bd7e6c9bbff89109119089) **fix:** pass argument correctly to ng build
