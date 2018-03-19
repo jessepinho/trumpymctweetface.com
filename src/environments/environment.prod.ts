@@ -1,4 +1,4 @@
 export const environment = {
-  apiHost: 'https://us-central1-trumpymctweetface.cloudfunctions.net/api',
+  apiHost: 'https://trumpymctweetface.com/api',
   production: true,
 };
