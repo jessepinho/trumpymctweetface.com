@@ -1,3 +1,8 @@
+### 1.7.1
+
+* [`0117780`](https://github.com/jessepinho/trumpymctweetface.com/commit/0117780f48bf0aeb35bd7e6c9bbff89109119089) **fix:** pass argument correctly to ng build
+
+
 ### 1.7.0
 
 * [`229b092`](https://github.com/jessepinho/trumpymctweetface.com/commit/229b0928a36ca47578fea13f360ce01a45852d9e) **chore:** add angular-cli-ghpages as a dev dependency
