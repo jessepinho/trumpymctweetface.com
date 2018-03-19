@@ -42,4 +42,6 @@ testem.log
 Thumbs.db
 
 # Firebase
+functions/lib
 functions/node_modules
+functions/.runtimeconfig.json
