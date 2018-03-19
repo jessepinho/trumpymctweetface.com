@@ -4,7 +4,7 @@
     "source": "functions"
   },
   "hosting": {
-    "predeploy": "npm run ng build -- --prod",
+    "predeploy": "yarn ng build -- --prod",
     "public": "dist",
     "ignore": [
       "firebase.json",
