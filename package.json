@@ -9,7 +9,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "nlm release --commit && ng build -prod && cp ./CNAME ./dist/CNAME && ngh"
+    "deploy": "nlm release --commit && firebase deploy --only functions,hosting"
   },
   "private": true,
   "repository": "https://github.com/jessepinho/trumpymctweetface.com.git",
@@ -33,7 +33,6 @@
     "@angular/compiler-cli": "^4.1.0",
     "@types/jasmine": "2.5.38",
     "@types/node": "~6.0.60",
-    "angular-cli-ghpages": "^0.5.2",
     "codelyzer": "~2.0.0",
     "jasmine-core": "~2.5.2",
     "jasmine-spec-reporter": "~3.2.0",
