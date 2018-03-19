@@ -1,3 +1,18 @@
+### 1.7.0
+
+* [`229b092`](https://github.com/jessepinho/trumpymctweetface.com/commit/229b0928a36ca47578fea13f360ce01a45852d9e) **chore:** add angular-cli-ghpages as a dev dependency
+* [`03ba65a`](https://github.com/jessepinho/trumpymctweetface.com/commit/03ba65ad467855aa364bde7e0d3f9e02950df2d3) **chore:** firebase init
+* [`cc00ff0`](https://github.com/jessepinho/trumpymctweetface.com/commit/cc00ff0ba5fe0051d0d3ae0c9707bf94fef433ab) **chore:** Git-ignore Firebase node modules
+* [`b968d67`](https://github.com/jessepinho/trumpymctweetface.com/commit/b968d6756e0559b963a301c1c1350ac6542d791c) **feat:** use History API rather than hash routing
+* [`f27e8cd`](https://github.com/jessepinho/trumpymctweetface.com/commit/f27e8cd44e4cee5f7f75dc6dfd6a56f6bc7d8a6a) **fix:** add typeRoots to functions/tsconfig.json
+* [`36be9c0`](https://github.com/jessepinho/trumpymctweetface.com/commit/36be9c082e4f16536ea6d0f9ec674747efcd3d81) **chore:** Git-ignore functions/lib
+* [`28f5daa`](https://github.com/jessepinho/trumpymctweetface.com/commit/28f5daa0d798fffb0f1266e77615cd6d8aab612a) **feat:** copy over the API function and install dependencies
+* [`9686811`](https://github.com/jessepinho/trumpymctweetface.com/commit/9686811c7a2844e87ee08bd583db1b28a5a3b17f) **chore:** switch to Yarn
+* [`8390f29`](https://github.com/jessepinho/trumpymctweetface.com/commit/8390f2935aabf3a37ae2a66723c3850dc5e70476) **feat:** add predeploy hook for hosting in firebase.json
+* [`6968822`](https://github.com/jessepinho/trumpymctweetface.com/commit/6968822396678f2c59f60f770aaa06653d976235) **feat:** use the new API URL
+* [`62f69f1`](https://github.com/jessepinho/trumpymctweetface.com/commit/62f69f1ec3c7b72951a74fb93bcb9522710e5a05) **feat:** update the deploy command to use Firebase
+
+
 ### 1.6.1
 
 * [`a7de1a4`](https://github.com/jessepinho/trumpymctweetface.com/commit/a7de1a425f1b2f788c8582535ba60a2715da498f) **chore:** use new Firebase functions endpoints
