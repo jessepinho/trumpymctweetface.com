@@ -1,3 +1,8 @@
+### 1.7.5
+
+* [`92b3dc2`](https://github.com/jessepinho/trumpymctweetface.com/commit/92b3dc2bcf00f4d92d324468c457069dc0720cb0) **fix:** fix proxy paths
+
+
 ### 1.7.4
 
 * [`bbea028`](https://github.com/jessepinho/trumpymctweetface.com/commit/bbea02890448a771ddec8048fedf5fb14bccfb42) **fix:** use globs for API paths

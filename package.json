@@ -1,6 +1,6 @@
 {
   "name": "trump-tweets",
-  "version": "1.7.4",
+  "version": "1.7.5",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
