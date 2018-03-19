@@ -1,3 +1,8 @@
+### 1.7.3
+
+* [`d47da60`](https://github.com/jessepinho/trumpymctweetface.com/commit/d47da607f76950a31334b3ef59267be8f5770d7e) **fix:** update angular-cli; tweak build command
+
+
 ### 1.7.2
 
 * [`ee31f4d`](https://github.com/jessepinho/trumpymctweetface.com/commit/ee31f4d172b09479365e3081bde2ce144b0aeff3) **fix:** use yarn instead of npm
