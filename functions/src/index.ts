@@ -3,6 +3,7 @@ import * as functions from 'firebase-functions';
 import * as httpProxy from 'http-proxy';
 
 const app = express();
+const proxyRouter = express.Router();
 
 const proxy = httpProxy
   .createProxyServer({
@@ -21,7 +22,7 @@ proxy.on('proxyRes', function(proxyRes, req, res) {
   }
 });
 
-app.get('/1.1/statuses/user_timeline.json', function(req, res) {
+proxyRouter.get('/1.1/statuses/user_timeline.json', function(req, res) {
   if (req.query.screen_name === 'realDonaldTrump') {
     proxy.web(req, res);
   } else {
@@ -29,8 +30,10 @@ app.get('/1.1/statuses/user_timeline.json', function(req, res) {
   }
 });
 
-app.get('/1.1/statuses/show.json', function(req, res) {
+proxyRouter.get('/1.1/statuses/show.json', function(req, res) {
   proxy.web(req, res);
 });
+
+app.use('/api', proxyRouter);
 
 export const api = functions.https.onRequest(app);
