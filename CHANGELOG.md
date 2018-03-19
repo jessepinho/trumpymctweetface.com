@@ -1,3 +1,8 @@
+### 1.7.4
+
+* [`bbea028`](https://github.com/jessepinho/trumpymctweetface.com/commit/bbea02890448a771ddec8048fedf5fb14bccfb42) **fix:** use globs for API paths
+
+
 ### 1.7.3
 
 * [`d47da60`](https://github.com/jessepinho/trumpymctweetface.com/commit/d47da607f76950a31334b3ef59267be8f5770d7e) **fix:** update angular-cli; tweak build command
