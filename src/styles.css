@@ -1,6 +1,15 @@
 body {
+  background: rgb(255,247,242);
+  background: radial-gradient(circle at 25% 50%, rgba(255,247,242,1) 0%, rgba(255,219,191,1) 100%);
+
+  border: 10px solid #ff6f00;
+
+  font-family: 'Roboto Mono', sans-serif;
+
   margin: 0;
   padding: 0;
+
+  box-sizing: border-box;
 }
 
 body,
