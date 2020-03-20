@@ -1,3 +1,9 @@
+### 1.8.0
+
+* [`791022e`](https://github.com/jessepinho/trumpymctweetface.com/commit/791022e054d487738b7da42bc32fba26c5b9b41a) **fix:** use https origin
+* [`e76b468`](https://github.com/jessepinho/trumpymctweetface.com/commit/e76b4687e5ed4fac7fe1598ff8bdd967053d0064) **feat:** tweak styling of page
+
+
 ### 1.7.5
 
 * [`92b3dc2`](https://github.com/jessepinho/trumpymctweetface.com/commit/92b3dc2bcf00f4d92d324468c457069dc0720cb0) **fix:** fix proxy paths
