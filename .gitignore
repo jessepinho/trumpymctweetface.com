@@ -45,3 +45,5 @@ Thumbs.db
 functions/lib
 functions/node_modules
 functions/.runtimeconfig.json
+
+.firebase
