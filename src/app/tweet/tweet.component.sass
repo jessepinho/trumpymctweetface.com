@@ -64,14 +64,17 @@ footer
   font-size: 1.5rem
   font-family: 'Gloria Hallelujah', sans-serif;
   line-height: 1.5em
-  padding: 1rem
+  padding: 0 1rem
+  position: absolute
   text-decoration: none
+  bottom: 0
   width: 100%
 
   @media only screen and (min-width: 640px)
     font-size: 2rem
     max-height: 100%
     overflow: hidden
+    position: static
     width: 50%
 
   @media only screen and (min-width: 1024px)
@@ -84,6 +87,7 @@ footer
   flex-grow: 1
   height: 100%
   overflow: hidden
+  position: relative
   width: 100%
 
   @media only screen and (min-width: 640px)
