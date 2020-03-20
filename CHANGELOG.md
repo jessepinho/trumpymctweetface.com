@@ -1,3 +1,9 @@
+### 1.8.2
+
+* [`553c992`](https://github.com/jessepinho/trumpymctweetface.com/commit/553c992245ca343efe75e5911062da36a2353a5c) **fix:** tweak positioning on mobile
+* [`9714e33`](https://github.com/jessepinho/trumpymctweetface.com/commit/9714e33774352f4d1d0155abffa819bd88d28e4b) **chore:** Git-ignore .firebase
+
+
 ### 1.8.1
 
 * [`9cf6061`](https://github.com/jessepinho/trumpymctweetface.com/commit/9cf6061391dc96d53f2935245a994828365a1b79) **fix:** add engine to functions
