@@ -11,6 +11,7 @@
   "main": "lib/index.js",
   "dependencies": {
     "express": "^4.16.3",
+    "firebase-admin": "~5.8.1",
     "firebase-functions": "^0.8.1",
     "http-proxy": "^1.16.2"
   },
