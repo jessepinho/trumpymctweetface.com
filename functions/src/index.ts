@@ -36,4 +36,6 @@ proxyRouter.get('/1.1/statuses/show.json', function(req, res) {
 
 app.use('/api', proxyRouter);
 
+// TODO: Get typings to work here
+// @ts-ignore
 export const api = functions.https.onRequest(app);
