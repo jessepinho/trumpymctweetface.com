@@ -18,7 +18,7 @@ proxy.on('proxyRes', function(proxyRes, req, res) {
   if (process.env.NODE_ENV === 'development') {
     res.setHeader('Access-Control-Allow-Origin', '*');
   } else {
-    res.setHeader('Access-Control-Allow-Origin', 'https://trumpymctweetface.com');
+    res.setHeader('Access-Control-Allow-Origin', 'https://trumpymctweetface.jessepinho.com');
   }
 });
 
