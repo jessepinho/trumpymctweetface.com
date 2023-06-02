@@ -39,10 +39,12 @@ proxyRouter.get("/1.1/statuses/user_timeline.json", function (req, res) {
 });
 
 proxyRouter.get("/1.1/statuses/show.json", function (req, res) {
+  setAccessControlAllowOriginHeader(res);
+
   proxy.web(req, res);
 });
 
-app.use("/api", proxyRouter);
+app.use("/", proxyRouter);
 
 // TODO: Fix typings
 // @ts-ignore
