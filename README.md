@@ -1,7 +1,5 @@
 ![Build status](https://travis-ci.org/jessepinho/trumpymctweetface.com.svg?branch=master)
 
-This requires Node version 8.
-
 # Trumpy McTweetface
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
